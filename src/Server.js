@@ -18,6 +18,6 @@ request(url, (error, res, html) => {
 
       json.title = title;
       json.release = release;
-    });
+    })
   }
 });
