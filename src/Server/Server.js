@@ -63,9 +63,17 @@ request(url, (error, res, html) => {
       };
     };
 
+    const dataTableLength = $('table tbody').find('tr').length;
+    //console.log(dataTableLength);
+
+    /* const itteratingArray = $('td').map((i, el) => {
+      return $(this).text();
+    }).get().join(' ');
+    console.log(itteratingArray); */
+
     for(let i = 0; i <= 8; i++){
-      const theWholeChabang = $('table tbody').children().eq(i).text();
-      console.log(theWholeChabang);
+      const tableRowData = $('table tbody').children().eq(i).children().text();
+      //console.log(tableRowData);
     }
 
     //hitLevel = $('table tbody').children().first().children().eq(1).text();
