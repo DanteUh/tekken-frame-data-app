@@ -52,22 +52,6 @@ for(let x = 0; x <= characterNames.length; x++ ) {
 
       const moves = [];
 
-<<<<<<< HEAD
-    const dataTableLength = $('table tbody').find('tr').length;
-    //console.log(dataTableLength);
-
-    /* const itteratingArray = $('td').map((i, el) => {
-      return $(this).text();
-    }).get().join(' ');
-    console.log(itteratingArray); */
-
-    for(let i = 0; i <= 8; i++){
-      const tableRowData = $('table tbody').children().eq(i).children().text();
-      //console.log(tableRowData);
-    }
-
-    //hitLevel = $('table tbody').children().first().children().eq(1).text();
-=======
       $('tr').each(function(i, el) {
         var obj = {}
         $(el).find('td').each(function(i, td) {
@@ -99,7 +83,6 @@ for(let x = 0; x <= characterNames.length; x++ ) {
         });
         moves.push(obj)
       });
->>>>>>> 600b1382d36e87adc0482011d439a259fff29c83
 
       const json = { moves };
 
