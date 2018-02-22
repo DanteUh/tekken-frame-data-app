@@ -9,7 +9,7 @@ export default class DataContainer extends Component {
 
   render() {
     return (
-      <div className="data-container">
+      <div className="data-container bg-dark text-white">
         <SearchBar />
         <CategoryDropdown />
       </div>
