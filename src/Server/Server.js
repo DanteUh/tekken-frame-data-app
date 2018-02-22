@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const request = require('request');
 const fs = require('fs');
 
-const characters = [
+const characterNames = [
   'akuma',
   'alisa',
   'asuka',
@@ -42,27 +42,17 @@ const characters = [
   'yoshimitsu'
 ];
 
-const url = 'http://rbnorway.org/lars-t7-frames/';
+for(let x = 0; x <= characterNames.length; x++ ) {
 
-request(url, (error, res, html) => {
-  if(!error){
-    const $ = cheerio.load(html);
+  const url = `http://rbnorway.org/${characterNames[x]}-t7-frames/`;
 
-    let command, hitLevel, damage, startUpFrame, blockFrame, hitFrame, counterHitFrame, notes;
+  request(url, (error, res, html) => {
+    if(!error){
+      const $ = cheerio.load(html);
 
-    const moveObject = () => {
-      return {
-        command,
-        hitLevel,
-        damage,
-        startUpFrame,
-        blockFrame,
-        hitFrame,
-        counterHitFrame,
-        notes
-      };
-    };
+      const moves = [];
 
+<<<<<<< HEAD
     const dataTableLength = $('table tbody').find('tr').length;
     //console.log(dataTableLength);
 
@@ -77,19 +67,45 @@ request(url, (error, res, html) => {
     }
 
     //hitLevel = $('table tbody').children().first().children().eq(1).text();
+=======
+      $('tr').each(function(i, el) {
+        var obj = {}
+        $(el).find('td').each(function(i, td) {
+          switch(i) {
+            case 0:
+              obj.command = $(td).text();
+              break;
+            case 1:
+              obj.hitLevel = $(td).text();
+              break;
+            case 2:
+              obj.damage = $(td).text();
+              break;
+            case 3:
+              obj.startUpFrame = $(td).text();
+              break;
+            case 4:
+              obj.blockFrame = $(td).text();
+              break;
+            case 5:
+              obj.hitFrame = $(td).text();
+              break;
+            case 6:
+              obj.counterHitFrame = $(td).text();
+              break;
+            case 7:
+              obj.notes = $(td).text();
+          }
+        });
+        moves.push(obj)
+      });
+>>>>>>> 600b1382d36e87adc0482011d439a259fff29c83
 
-    const moveData =  moveObject();
-    let i = 0;
+      const json = { moves };
 
-    for(let property in moveData) {
-      moveData[property] = $('table tbody tr').children().eq(i).text();
-      i++;
+      fs.writeFile(`${characterNames[x]}.json`, JSON.stringify(json, null, 4), err => {
+        console.log(`File successfully written! - Check the Server directory for the ${characterNames[x]}.json file`);
+      });
     }
-
-    const json = { moveData };
-
-    fs.writeFile('output.json', JSON.stringify(json, null, 4), err => {
-      console.log('File successfully written! - Check the Server directory for the output.json file');
-    });
-  }
-});
+  });
+}
