@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Collapse } from 'reactstrap';
+import PropTypes from 'prop-types';
 import DataTable from './DataTable';
 
 export default class CategoryDropdown extends Component {
   state = {
     collapse: true,
-    characterData: 'characterData',
   }
 
   toggleClick = () => {
@@ -19,9 +19,13 @@ export default class CategoryDropdown extends Component {
           <h2>Category Dropdown</h2>
         </button>
         <Collapse isOpen={this.state.collapse}>
-          <DataTable characterData={this.state.characterData} />
+          <DataTable characterData={this.props.characterData} />
         </Collapse>
       </div>
     );
   }
+}
+
+CategoryDropdown.propTypes = {
+  characterData: PropTypes.array.isRequired,
 }
