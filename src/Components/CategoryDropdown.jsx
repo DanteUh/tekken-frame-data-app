@@ -14,9 +14,9 @@ export default class CategoryDropdown extends Component {
 
   render() {
     return (
-      <div className="category-dropdown pt-5 pb-3">
+      <div className="category-dropdown p-3">
         <button className="dropdown-btn" onClick={this.toggleClick}>
-          <h2>Category Dropdown</h2>
+          <h4>Category Dropdown</h4>
         </button>
         <Collapse isOpen={this.state.collapse}>
           <DataTable characterData={this.props.characterData} />

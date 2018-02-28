@@ -26,7 +26,7 @@ class App extends Component {
     console.log(this.state.selectedCharacter);
     return (
       <div className="App">
-        <Container style={{ maxWidth: "97%" }}>
+        <Container style={{ maxWidth: "100%" }}>
           <Row>
             <Col xs="2" style={{ padding: 0 }}>
               <div className="character-nav">
