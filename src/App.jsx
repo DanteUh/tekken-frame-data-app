@@ -2,19 +2,39 @@ import React, { Component } from 'react';
 import { ListGroup, Container, Row, Col } from 'reactstrap';
 import './App.css';
 import characters from './Server/characterNames';
+
+// Components
 import DataContainer from './Containers/DataContainer';
 import CharacterList from './Components/CharacterList';
 
 class App extends Component {
   state = {
     characterList: characters.characterNames,
-    selectedCharacter: '',
+    selectedCharacter: 'akuma',
+    characterData: [],
   }
 
-  handleClick = (e) => {this.setState({ [e.target.name]: e.target.value })};
+  componentDidMount() {
+    this.fetchCharacterData();
+  }
+
+  handleClick = (e) => {
+    this.fetchCharacterData();
+    this.setState({ [e.target.name]: e.target.value })
+  };
+
+  fetchCharacterData = () => {
+    const characterData = require(`./Server/CharacterData/${this.state.selectedCharacter}`);
+    console.log(characterData);
+    this.setState({ characterData: characterData.character.moves });
+  };
+
+  changeCharacterData = (e) => {
+    
+    this.handleClick(e);
+  };
 
   render() {
-
     const characterNavigation = this.state.characterList.map((char, i) => {
       return (
         <CharacterList
@@ -37,7 +57,8 @@ class App extends Component {
             </Col>
             <Col style={{ padding: 0 }}>
               <DataContainer
-                selectedCharacter={this.state.selectedCharacter} />
+                selectedCharacter={this.state.selectedCharacter}
+                characterData={this.state.characterData} />
             </Col>
           </Row>
         </Container>
