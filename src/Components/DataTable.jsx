@@ -5,6 +5,9 @@ const DataTable = (props) => {
   return (
     <div className="data-table">
       <ReactTable
+        filterable
+        defaultFilterMethod={(filter, row) =>
+          String(row[filter.id]) === filter.value}
         columns={[
           {
             Header: 'Command',
@@ -40,6 +43,7 @@ const DataTable = (props) => {
           },
         ]}
         data={props.characterData}
+        defaultPageSize={50}
         className="-striped -highlight"
       />
     </div>
