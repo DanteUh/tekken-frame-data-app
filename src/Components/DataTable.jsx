@@ -7,7 +7,7 @@ const DataTable = (props) => {
       <ReactTable
         filterable
         defaultFilterMethod={(filter, row) =>
-          String(row[filter.id]) === filter.value}
+          (row[filter.id]).includes(filter.value)}
         columns={[
           {
             Header: 'Command',
