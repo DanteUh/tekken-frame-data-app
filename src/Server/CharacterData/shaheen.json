@@ -283,16 +283,6 @@
                 "notes": ""
             },
             {
-                "command": "d/f+2",
-                "hitLevel": "m",
-                "damage": "13",
-                "startUpFrame": "15~16",
-                "blockFrame": "-7~-6",
-                "hitFrame": "Launch (JG?)(+4a)",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": ""
-            },
-            {
                 "command": "d/f+3",
                 "hitLevel": "m",
                 "damage": "20",
@@ -483,26 +473,6 @@
                 "notes": ""
             },
             {
-                "command": "u/b or u or u/f+4",
-                "hitLevel": "m (TJ)",
-                "damage": "13",
-                "startUpFrame": "15~17 js9~",
-                "blockFrame": "-13~-11",
-                "hitFrame": "Launch (JG?)",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": ""
-            },
-            {
-                "command": "f, F+3 or f, f, f+3 (Close)",
-                "hitLevel": "m (TJ)(, (throw))",
-                "damage": "13(,5,5)",
-                "startUpFrame": "17a(18~) js13~",
-                "blockFrame": "-12",
-                "hitFrame": "Throw(Launch)",
-                "counterHitFrame": "Throw(Launch)",
-                "notes": ""
-            },
-            {
                 "command": "f, F+3 or f, f, f+3",
                 "hitLevel": "m (TJ)",
                 "damage": "13",
@@ -521,16 +491,6 @@
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
                 "notes": "Power crush"
-            },
-            {
-                "command": "f, b+2",
-                "hitLevel": "h?((throw))",
-                "damage": "10(,45)",
-                "startUpFrame": "14(14~)",
-                "blockFrame": "-4",
-                "hitFrame": "Throw(KND) +13",
-                "counterHitFrame": "Throw(KND) +13",
-                "notes": ""
             },
             {
                 "command": "WS+1",
@@ -633,16 +593,6 @@
                 "notes": ""
             },
             {
-                "command": "SNK 3 (Close)",
-                "hitLevel": "m (TJ)(, (throw))",
-                "damage": "13(,5,5)",
-                "startUpFrame": "20a(35~) js14~",
-                "blockFrame": "-12",
-                "hitFrame": "Throw(Launch)",
-                "counterHitFrame": "Throw(Launch)",
-                "notes": ""
-            },
-            {
                 "command": "SNK 3",
                 "hitLevel": "m (TJ)",
                 "damage": "13",
@@ -660,16 +610,6 @@
                 "blockFrame": "-19",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
-            },
-            {
-                "command": "SNK 1+2",
-                "hitLevel": "m(Throw)",
-                "damage": "30",
-                "startUpFrame": "27(42~)",
-                "blockFrame": "Throw(KND)",
-                "hitFrame": "Throw(KND)",
-                "counterHitFrame": "Throw(KND)",
                 "notes": ""
             },
             {
@@ -770,16 +710,6 @@
                 "blockFrame": "-1~-2",
                 "hitFrame": "+5~+6",
                 "counterHitFrame": "+5~+6",
-                "notes": ""
-            },
-            {
-                "command": "d/f+2",
-                "hitLevel": "m",
-                "damage": "13",
-                "startUpFrame": "15~16",
-                "blockFrame": "-7~-6",
-                "hitFrame": "Launch (JG?)(+4a)",
-                "counterHitFrame": "Launch (JG?)",
                 "notes": ""
             },
             {
@@ -983,26 +913,6 @@
                 "notes": ""
             },
             {
-                "command": "u/b or u or u/f+4",
-                "hitLevel": "m (TJ)",
-                "damage": "13",
-                "startUpFrame": "15~17 js9~",
-                "blockFrame": "-13~-11",
-                "hitFrame": "Launch (JG?)",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": ""
-            },
-            {
-                "command": "u/f, n+4",
-                "hitLevel": "m",
-                "damage": "25",
-                "startUpFrame": "23(29,35) js9~33",
-                "blockFrame": "-11(-13)",
-                "hitFrame": "Launch (JG?)",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": ""
-            },
-            {
                 "command": "WS+1",
                 "hitLevel": "m",
                 "damage": "16",
@@ -1170,6 +1080,100 @@
                 "blockFrame": "-11",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
+                "notes": ""
+            }
+        ],
+        "launchers": [
+            {
+                "command": "d/f+2",
+                "hitLevel": "m",
+                "damage": "13",
+                "startUpFrame": "15~16",
+                "blockFrame": "-7~-6",
+                "hitFrame": "Launch (JG?)(+4a)",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": ""
+            },
+            {
+                "command": "u/b or u or u/f+4",
+                "hitLevel": "m (TJ)",
+                "damage": "13",
+                "startUpFrame": "15~17 js9~",
+                "blockFrame": "-13~-11",
+                "hitFrame": "Launch (JG?)",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": ""
+            },
+            {
+                "command": "f, F+3 or f, f, f+3 (Close)",
+                "hitLevel": "m (TJ)(, (throw))",
+                "damage": "13(,5,5)",
+                "startUpFrame": "17a(18~) js13~",
+                "blockFrame": "-12",
+                "hitFrame": "Throw(Launch)",
+                "counterHitFrame": "Throw(Launch)",
+                "notes": ""
+            },
+            {
+                "command": "SNK 3 (Close)",
+                "hitLevel": "m (TJ)(, (throw))",
+                "damage": "13(,5,5)",
+                "startUpFrame": "20a(35~) js14~",
+                "blockFrame": "-12",
+                "hitFrame": "Throw(Launch)",
+                "counterHitFrame": "Throw(Launch)",
+                "notes": ""
+            },
+            {
+                "command": "d/f+2",
+                "hitLevel": "m",
+                "damage": "13",
+                "startUpFrame": "15~16",
+                "blockFrame": "-7~-6",
+                "hitFrame": "Launch (JG?)(+4a)",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": ""
+            },
+            {
+                "command": "u/b or u or u/f+4",
+                "hitLevel": "m (TJ)",
+                "damage": "13",
+                "startUpFrame": "15~17 js9~",
+                "blockFrame": "-13~-11",
+                "hitFrame": "Launch (JG?)",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": ""
+            },
+            {
+                "command": "u/f, n+4",
+                "hitLevel": "m",
+                "damage": "25",
+                "startUpFrame": "23(29,35) js9~33",
+                "blockFrame": "-11(-13)",
+                "hitFrame": "Launch (JG?)",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": ""
+            }
+        ],
+        "throws": [
+            {
+                "command": "f, b+2",
+                "hitLevel": "h?((throw))",
+                "damage": "10(,45)",
+                "startUpFrame": "14(14~)",
+                "blockFrame": "-4",
+                "hitFrame": "Throw(KND) +13",
+                "counterHitFrame": "Throw(KND) +13",
+                "notes": ""
+            },
+            {
+                "command": "SNK 1+2",
+                "hitLevel": "m(Throw)",
+                "damage": "30",
+                "startUpFrame": "27(42~)",
+                "blockFrame": "Throw(KND)",
+                "hitFrame": "Throw(KND)",
+                "counterHitFrame": "Throw(KND)",
                 "notes": ""
             }
         ]

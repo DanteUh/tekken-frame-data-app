@@ -683,16 +683,6 @@
                 "notes": ""
             },
             {
-                "command": "WS+2 When hit F+2",
-                "hitLevel": "m, (throw)",
-                "damage": "10,10,15",
-                "startUpFrame": "18",
-                "blockFrame": "",
-                "hitFrame": "Launch",
-                "counterHitFrame": "Launch",
-                "notes": ""
-            },
-            {
                 "command": "WS+3",
                 "hitLevel": "h",
                 "damage": "17",
@@ -710,16 +700,6 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
-            },
-            {
-                "command": "FC+d/f+1",
-                "hitLevel": "m",
-                "damage": "20",
-                "startUpFrame": "15",
-                "blockFrame": "-14",
-                "hitFrame": "Launch (JG?)",
-                "counterHitFrame": "Launch (JG?)",
                 "notes": ""
             },
             {
@@ -1010,16 +990,6 @@
                 "blockFrame": "+1~",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
-            },
-            {
-                "command": "d/b, hcb, d/f+1+2",
-                "hitLevel": "Sm",
-                "damage": "45",
-                "startUpFrame": "9~",
-                "blockFrame": "-18",
-                "hitFrame": "Launch",
-                "counterHitFrame": "Launch",
                 "notes": ""
             },
             {
@@ -1382,6 +1352,39 @@
                 "counterHitFrame": "KND",
                 "notes": ""
             }
-        ]
+        ],
+        "launchers": [
+            {
+                "command": "WS+2 When hit F+2",
+                "hitLevel": "m, (throw)",
+                "damage": "10,10,15",
+                "startUpFrame": "18",
+                "blockFrame": "",
+                "hitFrame": "Launch",
+                "counterHitFrame": "Launch",
+                "notes": ""
+            },
+            {
+                "command": "FC+d/f+1",
+                "hitLevel": "m",
+                "damage": "20",
+                "startUpFrame": "15",
+                "blockFrame": "-14",
+                "hitFrame": "Launch (JG?)",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": ""
+            },
+            {
+                "command": "d/b, hcb, d/f+1+2",
+                "hitLevel": "Sm",
+                "damage": "45",
+                "startUpFrame": "9~",
+                "blockFrame": "-18",
+                "hitFrame": "Launch",
+                "counterHitFrame": "Launch",
+                "notes": ""
+            }
+        ],
+        "throws": []
     }
 }

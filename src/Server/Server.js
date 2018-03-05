@@ -18,6 +18,8 @@ for(let x = 0; x <= characterNames.length; x++ ) {
       const $ = cheerio.load(html);
 
       const moves = [];
+      const launchers = [];
+      const throws = [];
 
       $('tr').each(function(i, el) {
         var moveObj = {}
@@ -48,12 +50,20 @@ for(let x = 0; x <= characterNames.length; x++ ) {
               moveObj.notes = $(td).text();
           }
         });
-        moves.push(moveObj);
+        if (moveObj.hitFrame.includes('Launch') || moveObj.counterHitFrame.includes('Launch')) {
+          launchers.push(moveObj);
+        } else if (moveObj.hitFrame.includes('Throw') || moveObj.counterHitFrame.includes('Throw')) {
+          throws.push(moveObj);
+        } else {
+          moves.push(moveObj);
+        }
       });
 
       const character = {
         name: currentCharacter,
         moves,
+        launchers,
+        throws,
       };
 
       const json = { character };
