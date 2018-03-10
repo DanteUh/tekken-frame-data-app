@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CategoryDropdown from '../Components/CategoryDropdown';
-// import characterData from '../Server/CharacterData/lars.json';
 
 export default class DataContainer extends Component {
   state = {
@@ -8,9 +7,16 @@ export default class DataContainer extends Component {
   }
 
   render() {
+    const categoryDropdown = this.props.characterData.map((data, i) => {
+      return (
+        <CategoryDropdown
+          key={i}
+          characterData={data} />
+      );
+    });
     return (
       <div className="data-container bg-dark text-white">
-        <CategoryDropdown characterData={this.props.characterData}/>
+        {categoryDropdown}
       </div>
     );
   }
