@@ -26,6 +26,6 @@ export default class CategoryDropdown extends Component {
   }
 }
 
-CategoryDropdown.propTypes = {
+/* CategoryDropdown.propTypes = {
   characterData: PropTypes.array.isRequired,
-}
+} */
