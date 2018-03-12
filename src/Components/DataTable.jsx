@@ -43,7 +43,7 @@ const DataTable = (props) => {
           },
         ]}
         data={props.characterData}
-        defaultPageSize={20}
+        defaultPageSize={15}
         className="-striped -highlight"
       />
     </div>
