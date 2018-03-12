@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { ListGroup, Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Input } from 'reactstrap';
 import './App.css';
 import characters from './Server/characterNames';
 
 // Components
-import DataContainer from './Containers/DataContainer';
-import CharacterList from './Components/CharacterList';
+import CharacterNavigation from './Components/CharacterNavigation';
+import CategoryDropdown from './Components/CategoryDropdown';
 
 class App extends Component {
   state = {
@@ -15,16 +15,16 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.fetchCharacterData();
+    this.fetchCharacterData(this.state.selectedCharacter);
   }
 
   handleClick = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    this.fetchCharacterData();
+    this.fetchCharacterData(this.state.selectedCharacter);
   };
 
-  fetchCharacterData = () => {
-    const characterData = require(`./Server/CharacterData/${this.state.selectedCharacter}`);
+  fetchCharacterData = (character) => {
+    const characterData = require(`./Server/CharacterData/${character}`);
     const characterDataArray = [
       characterData.character.moves,
       characterData.character.launchers,
@@ -37,28 +37,38 @@ class App extends Component {
     console.log(this.state.selectedCharacter);
     const characterNavigation = this.state.characterList.map((char, i) => {
       return (
-        <CharacterList
+        <CharacterNavigation
           key={i}
-          handleClick={this.handleClick}
-          characterName={char}
-        />
+          characterName={char} />
+      );
+    });
+
+    const categoryDropdown = this.state.characterData.map((data, i) => {
+      return (
+        <CategoryDropdown
+          key={i}
+          characterData={data} />
       );
     });
     return (
       <div className="App">
-        <Container style={{ maxWidth: "100%" }}>
+        <Container>
           <Row>
-            <Col xs="1" style={{ padding: 0 }}>
+            <Col>
               <div className="character-nav">
-                <ListGroup>
+                <Input
+                  type="select"
+                  name="selectedCharacter"
+                  className="character-select"
+                  onClick={this.handleClick} 
+                  value={this.state.characterName}
+                >
                   {characterNavigation}
-                </ListGroup>
+                </Input>
               </div>
-            </Col>
-            <Col style={{ padding: 0 }}>
-              <DataContainer
-                selectedCharacter={this.state.selectedCharacter}
-                characterData={this.state.characterData} />
+              <div className="data-container bg-dark text-white">
+                {categoryDropdown}
+              </div>
             </Col>
           </Row>
         </Container>
