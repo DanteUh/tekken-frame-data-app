@@ -10,7 +10,8 @@
                 "blockFrame": "Block frame",
                 "hitFrame": "Hit frame",
                 "counterHitFrame": "Counter hit frame",
-                "notes": "Notes"
+                "notes": "Notes",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "in rage b+1+2",
@@ -20,7 +21,8 @@
                 "blockFrame": "–",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "in rage u/b+1+4",
@@ -30,7 +32,8 @@
                 "blockFrame": "–",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Rage art"
+                "notes": "Rage art",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "1",
@@ -40,7 +43,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "1, 1",
@@ -50,7 +54,8 @@
                 "blockFrame": "-8~-7",
                 "hitFrame": "+4~+5s",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "1, 2",
@@ -60,7 +65,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "-3",
                 "counterHitFrame": "-3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "1, 2, 1",
@@ -70,7 +76,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "-2",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2",
@@ -80,7 +87,8 @@
                 "blockFrame": "-1",
                 "hitFrame": "+5",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2, 1",
@@ -90,7 +98,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2, 1, B (Cancel)",
@@ -100,7 +109,8 @@
                 "blockFrame": "-19",
                 "hitFrame": "-13",
                 "counterHitFrame": "-10",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2, 2",
@@ -110,7 +120,8 @@
                 "blockFrame": "-1",
                 "hitFrame": "+5",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2, 2, 1+2",
@@ -120,7 +131,8 @@
                 "blockFrame": "–",
                 "hitFrame": "+",
                 "counterHitFrame": "+",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2, 3",
@@ -130,7 +142,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2, d+3",
@@ -140,7 +153,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "-1",
                 "counterHitFrame": "-1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "3~4",
@@ -150,7 +164,8 @@
                 "blockFrame": "-6~-5",
                 "hitFrame": "+3~+4?",
                 "counterHitFrame": "+3~+4?",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "3~4, u/b or u or u/f",
@@ -160,7 +175,8 @@
                 "blockFrame": "+5~+6",
                 "hitFrame": "+9~+10?",
                 "counterHitFrame": "+9~+10?",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "3~4 (Second hit miss)",
@@ -170,7 +186,8 @@
                 "blockFrame": "-19? (Stance-9?)",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "4",
@@ -180,7 +197,8 @@
                 "blockFrame": "-11",
                 "hitFrame": "0",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "4, 4",
@@ -190,7 +208,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "-2",
                 "counterHitFrame": "-2",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "4, 4, 4",
@@ -200,7 +219,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "1+4 or WS+1+4",
@@ -210,7 +230,8 @@
                 "blockFrame": "-15",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "4~1",
@@ -220,7 +241,8 @@
                 "blockFrame": "-15",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "1+2+3",
@@ -230,7 +252,8 @@
                 "blockFrame": "-8~-5",
                 "hitFrame": "0~+3",
                 "counterHitFrame": "+16~+19",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+2",
@@ -240,7 +263,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+13kg",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+2, d/b+2",
@@ -250,7 +274,8 @@
                 "blockFrame": "-5~-4",
                 "hitFrame": "+6~+7",
                 "counterHitFrame": "+6~+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+2, D/B+2, 2",
@@ -260,7 +285,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+2, D/B+2, 2, 2",
@@ -270,7 +296,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+2, D/B+2, 2, 2, 2",
@@ -280,7 +307,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+2, D/B+2, 2, 2, 2, 2",
@@ -290,7 +318,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+2, D/B+2, 2, 2, 2, 2, 2",
@@ -300,7 +329,8 @@
                 "blockFrame": "-49~-46",
                 "hitFrame": "-38~-35",
                 "counterHitFrame": "-38~-35",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+3",
@@ -310,7 +340,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+3, 3",
@@ -320,7 +351,8 @@
                 "blockFrame": "-20",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+3, 3, d+3+4",
@@ -330,7 +362,8 @@
                 "blockFrame": "-35",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND?",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+4",
@@ -340,7 +373,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+1+2",
@@ -350,7 +384,8 @@
                 "blockFrame": "-8?~-7",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+3+4",
@@ -360,7 +395,8 @@
                 "blockFrame": "-14~-10?",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Power crush"
+                "notes": "Power crush",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+3+4, b",
@@ -370,7 +406,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": "Power crush"
+                "notes": "Power crush",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+1",
@@ -380,7 +417,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+5",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+1, 2",
@@ -390,7 +428,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+13kg",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+1, 4",
@@ -400,7 +439,8 @@
                 "blockFrame": "-14?",
                 "hitFrame": "+4?",
                 "counterHitFrame": "+",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+3",
@@ -410,7 +450,8 @@
                 "blockFrame": "-4~-3",
                 "hitFrame": "+4~+5",
                 "counterHitFrame": "+4~+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+3, 1",
@@ -420,7 +461,8 @@
                 "blockFrame": "-9~-8?",
                 "hitFrame": "+3~+4?s",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+3, 1* (Cancel)",
@@ -430,7 +472,8 @@
                 "blockFrame": "0~+1 OC",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+1+2",
@@ -440,7 +483,8 @@
                 "blockFrame": "-11",
                 "hitFrame": "+4",
                 "counterHitFrame": "+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+1+2, 2",
@@ -450,7 +494,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "0?",
                 "counterHitFrame": "+k",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1",
@@ -460,7 +505,8 @@
                 "blockFrame": "-5~-4",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1, *, n (After on step)",
@@ -470,7 +516,8 @@
                 "blockFrame": "0~+1 OC",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1, *, n (After two step)",
@@ -480,7 +527,8 @@
                 "blockFrame": "0~+1 OC",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1, *, n (After three step)",
@@ -490,7 +538,8 @@
                 "blockFrame": "0~+1 OC",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1, *, n (Four steps)",
@@ -500,7 +549,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1, *, n (Five steps)",
@@ -510,7 +560,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1, *, n (Six steps)",
@@ -520,7 +571,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1, *, B (Cancel)",
@@ -530,7 +582,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+2",
@@ -540,7 +593,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "0~+1",
                 "counterHitFrame": "0~+1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+2, 1",
@@ -550,7 +604,8 @@
                 "blockFrame": "-9?",
                 "hitFrame": "KND",
                 "counterHitFrame": "",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+2, 2",
@@ -560,7 +615,8 @@
                 "blockFrame": "-14~-13",
                 "hitFrame": "+5~+6",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+2, 2, 1",
@@ -570,7 +626,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+2, 2, d+1",
@@ -580,7 +637,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "+4s",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+2, 2, 2+3",
@@ -590,7 +648,8 @@
                 "blockFrame": "-14~-13",
                 "hitFrame": "+5~+6",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1+4",
@@ -600,7 +659,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1+4, b+1 (one spin)",
@@ -610,7 +670,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1+4, B+1, 1 (two spins)",
@@ -620,7 +681,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1+4, B+1, 1, 1 (three spins)",
@@ -630,7 +692,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1+4, B+1, 1, 1, 1 (four spins)",
@@ -640,7 +703,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1+4, B+1, 1, 1, 1, 1 (five spins)",
@@ -650,7 +714,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+1",
@@ -660,7 +725,8 @@
                 "blockFrame": "-16",
                 "hitFrame": "0 OC",
                 "counterHitFrame": "0 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+1, 1",
@@ -670,7 +736,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+2",
@@ -680,7 +747,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "D/B+2, 2",
@@ -690,7 +758,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "D/B+2, 2, 2",
@@ -700,7 +769,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "D/B+2, 2, 2, 2",
@@ -710,7 +780,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "D/B+2, 2, 2, 2, 2",
@@ -720,7 +791,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "D/B+2, 2, 2, 2, 2, 2",
@@ -730,7 +802,8 @@
                 "blockFrame": "-49~-46",
                 "hitFrame": "-38~-35",
                 "counterHitFrame": "-38~-35",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3 or FC+d/b+3",
@@ -740,7 +813,8 @@
                 "blockFrame": "-25~-24",
                 "hitFrame": "-14~-13",
                 "counterHitFrame": "-14~-13",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3, 3",
@@ -750,7 +824,8 @@
                 "blockFrame": "-19~-18",
                 "hitFrame": "-7~-6",
                 "counterHitFrame": "-7~-6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3, 3, 3",
@@ -760,7 +835,8 @@
                 "blockFrame": "-19~-18",
                 "hitFrame": "-7~-6",
                 "counterHitFrame": "-7~-6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3, 3, 3, 3",
@@ -770,7 +846,8 @@
                 "blockFrame": "-19~-18",
                 "hitFrame": "-7~-6",
                 "counterHitFrame": "-7~-6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3, 3, 3, 3, 3",
@@ -780,7 +857,8 @@
                 "blockFrame": "-19~-18",
                 "hitFrame": "-7~-6",
                 "counterHitFrame": "-7~-6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3, 3, 3, 3, 3, 3",
@@ -790,7 +868,8 @@
                 "blockFrame": "-27",
                 "hitFrame": "-14",
                 "counterHitFrame": "-14",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3, 3.. (two to five hits), f+4",
@@ -800,7 +879,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3, 3.. (two to five hits), d+3+4",
@@ -810,7 +890,8 @@
                 "blockFrame": "-25",
                 "hitFrame": "-13",
                 "counterHitFrame": "-13",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+4",
@@ -820,7 +901,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "-1",
                 "counterHitFrame": "-1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b*, 1+2 or FC+d/b*, 1+2 (to PDP)",
@@ -830,7 +912,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "PDP 1 or 2",
@@ -840,7 +923,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "PDP 3 or 4",
@@ -850,7 +934,8 @@
                 "blockFrame": "-15~-4",
                 "hitFrame": "-13~-2",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1",
@@ -860,7 +945,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+7",
                 "counterHitFrame": "+12",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1, 1",
@@ -870,7 +956,8 @@
                 "blockFrame": "+4",
                 "hitFrame": "+5",
                 "counterHitFrame": "+10",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1, 1, 1",
@@ -880,7 +967,8 @@
                 "blockFrame": "+4",
                 "hitFrame": "+5",
                 "counterHitFrame": "+10",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1, 1, 1, 1",
@@ -890,7 +978,8 @@
                 "blockFrame": "+4",
                 "hitFrame": "+5",
                 "counterHitFrame": "+10",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1, 1, 1, 1, 1",
@@ -900,7 +989,8 @@
                 "blockFrame": "4",
                 "hitFrame": "+5",
                 "counterHitFrame": "+10",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1, 1, 1, 1, 1, 1",
@@ -910,7 +1000,8 @@
                 "blockFrame": "-75",
                 "hitFrame": "-74",
                 "counterHitFrame": "-69",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1, ,, d/b+3",
@@ -920,7 +1011,8 @@
                 "blockFrame": "-20",
                 "hitFrame": "-9",
                 "counterHitFrame": "-9",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1, 3 or 4",
@@ -930,7 +1022,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "0",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1, 1.. (two to five hits), 3 or 4",
@@ -940,7 +1033,8 @@
                 "blockFrame": "-3",
                 "hitFrame": "-2",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+2",
@@ -950,7 +1044,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+2",
                 "counterHitFrame": "+2",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+2, 1+2",
@@ -960,7 +1055,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+2",
                 "counterHitFrame": "+2",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+2, 2",
@@ -970,7 +1066,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+3 or 4 (one spin)",
@@ -980,7 +1077,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "B+3 or 4, ,,",
@@ -990,7 +1088,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b+1+2",
@@ -1000,7 +1099,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b+1+2, 1+2",
@@ -1010,7 +1110,8 @@
                 "blockFrame": "+1~+2",
                 "hitFrame": "+1~+2",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b+1+2, n+1",
@@ -1020,7 +1121,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b+1+2, n+1, b",
@@ -1030,7 +1132,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u+3+4",
@@ -1040,7 +1143,8 @@
                 "blockFrame": "+4~+7s",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u+3+4 (First hit only)",
@@ -1050,7 +1154,8 @@
                 "blockFrame": "-9~-7",
                 "hitFrame": "+2~+4s",
                 "counterHitFrame": "+2~+4s",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+1",
@@ -1060,7 +1165,8 @@
                 "blockFrame": "-5,6?",
                 "hitFrame": "+6?s",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+2",
@@ -1070,7 +1176,8 @@
                 "blockFrame": "-16",
                 "hitFrame": "+8?",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b+4",
@@ -1080,7 +1187,8 @@
                 "blockFrame": "-19",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u or u/f+4",
@@ -1090,7 +1198,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Homing"
+                "notes": "Homing",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+1+2",
@@ -1100,7 +1209,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+1+2, d (First stage)",
@@ -1110,7 +1220,8 @@
                 "blockFrame": "+4~+5",
                 "hitFrame": "+4~+5",
                 "counterHitFrame": "+4~+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+1+2, d (Second stage)",
@@ -1120,7 +1231,8 @@
                 "blockFrame": "+4~+5",
                 "hitFrame": "+4~+5",
                 "counterHitFrame": "+4~+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+1+2, 1+2",
@@ -1130,7 +1242,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+1+2, b",
@@ -1140,7 +1253,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+1+2, b, n+1+2",
@@ -1150,7 +1264,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+3+4",
@@ -1160,7 +1275,8 @@
                 "blockFrame": "-16~-13",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+3+4, 1+2",
@@ -1170,7 +1286,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+3+4, d+1+2",
@@ -1180,7 +1297,8 @@
                 "blockFrame": "+18 GB",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+3+4, d+3+4",
@@ -1190,7 +1308,8 @@
                 "blockFrame": "-20",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+3+4, b+1",
@@ -1200,7 +1319,8 @@
                 "blockFrame": "-1~0",
                 "hitFrame": "-43~-42",
                 "counterHitFrame": "-43~-42",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+3+4, b+1, 3+4",
@@ -1210,7 +1330,8 @@
                 "blockFrame": "0~+2 OC",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+3+4, b+1, 4, d+1",
@@ -1220,7 +1341,8 @@
                 "blockFrame": "-5~-4",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+3+4, u or u/f+3+4",
@@ -1230,7 +1352,8 @@
                 "blockFrame": "-4~-3",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+2 Hit in front1+2",
@@ -1240,7 +1363,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+3",
@@ -1250,7 +1374,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+4",
                 "counterHitFrame": "CS 12",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+3, 1+2",
@@ -1260,7 +1385,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+10",
                 "counterHitFrame": "CS 18",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+1+2",
@@ -1270,7 +1396,8 @@
                 "blockFrame": "-8~-6",
                 "hitFrame": "+3~+5 OC",
                 "counterHitFrame": "+3~+5 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+3+4",
@@ -1280,7 +1407,8 @@
                 "blockFrame": "-20~-18",
                 "hitFrame": "-9~-7 OC",
                 "counterHitFrame": "-9~-7 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+3+4, 1+2",
@@ -1290,7 +1418,8 @@
                 "blockFrame": "-31~-25",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+1+4",
@@ -1300,7 +1429,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+1+4, f, F",
@@ -1310,7 +1440,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+1+4, n",
@@ -1320,7 +1451,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b, B+1+4",
@@ -1330,7 +1462,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b, B+1+4, B (Cancel)",
@@ -1340,7 +1473,8 @@
                 "blockFrame": "-15",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, n, d, d/f+2",
@@ -1350,7 +1484,8 @@
                 "blockFrame": "-14",
                 "hitFrame": "+5?k",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "in rage f, n, d, d/f+1+2",
@@ -1360,7 +1495,8 @@
                 "blockFrame": "+2?",
                 "hitFrame": "SCD",
                 "counterHitFrame": "SCD",
-                "notes": "Rage art, Tail spin"
+                "notes": "Rage art, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "qcf+1",
@@ -1370,7 +1506,8 @@
                 "blockFrame": "0~+1 OC",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "0~+1 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, f, f+3 or 2+4+3",
@@ -1380,7 +1517,8 @@
                 "blockFrame": "+9~+10g",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1",
@@ -1390,7 +1528,8 @@
                 "blockFrame": "-10~-9",
                 "hitFrame": "+1~+2",
                 "counterHitFrame": "+6~+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 1",
@@ -1400,7 +1539,8 @@
                 "blockFrame": "-11",
                 "hitFrame": "0",
                 "counterHitFrame": "0",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 1, b+3 or 4",
@@ -1410,7 +1550,8 @@
                 "blockFrame": "-16",
                 "hitFrame": "-5",
                 "counterHitFrame": "-5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 1, 1",
@@ -1420,7 +1561,8 @@
                 "blockFrame": "-11",
                 "hitFrame": "0",
                 "counterHitFrame": "0",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 1, 1, 1",
@@ -1430,7 +1572,8 @@
                 "blockFrame": "0~+1s",
                 "hitFrame": "+6~+7s",
                 "counterHitFrame": "+6~+7s",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 2",
@@ -1440,7 +1583,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+13kg",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 2, d/b+2",
@@ -1450,7 +1594,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 2, D/B+2, 2",
@@ -1460,7 +1605,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 2, D/B+2, 2, 2",
@@ -1470,7 +1616,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 2, D/B+2, 2, 2, 2",
@@ -1480,7 +1627,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 2, D/B+2, 2, 2, 2, 2",
@@ -1490,7 +1638,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1, 2, D/B+2, 2, 2, 2, 2, 2",
@@ -1500,7 +1649,8 @@
                 "blockFrame": "-49~-46",
                 "hitFrame": "-38~-35",
                 "counterHitFrame": "-38~-35",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+2",
@@ -1510,7 +1660,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+7",
                 "counterHitFrame": "+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+3 or 3+4",
@@ -1520,7 +1671,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+3, 2",
@@ -1530,7 +1682,8 @@
                 "blockFrame": "-13~-12?s",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FC+d/f+4",
@@ -1540,7 +1693,8 @@
                 "blockFrame": "-21",
                 "hitFrame": "+4?s",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FC+D/F+1 FC+d/b, b+1",
@@ -1550,7 +1704,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "SS+4",
@@ -1560,7 +1715,8 @@
                 "blockFrame": "0",
                 "hitFrame": "KND",
                 "counterHitFrame": "CS",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "SS+4, 1+2",
@@ -1570,7 +1726,8 @@
                 "blockFrame": "+3",
                 "hitFrame": "KND",
                 "counterHitFrame": "CS",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "SS+4, 3+4",
@@ -1580,7 +1737,8 @@
                 "blockFrame": "-3",
                 "hitFrame": "KND",
                 "counterHitFrame": "CS",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "Grounded face up 3+4",
@@ -1590,7 +1748,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "Opponent Down u/b or u+1",
@@ -1600,7 +1759,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "-8 OC",
                 "counterHitFrame": "-8 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "1+2 or FC+1+2 (to KIN)",
@@ -1610,7 +1770,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN Returns high or mid attacks",
@@ -1620,7 +1781,8 @@
                 "blockFrame": "+4~+5s",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN F",
@@ -1630,7 +1792,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN D (Cancel)",
@@ -1640,7 +1803,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 1",
@@ -1650,7 +1814,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "-1",
                 "counterHitFrame": "-1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 1, 1",
@@ -1660,7 +1825,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "+4s",
                 "counterHitFrame": "+4s",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 1, 1, 2+3",
@@ -1670,7 +1836,8 @@
                 "blockFrame": "-28",
                 "hitFrame": "-12 OC",
                 "counterHitFrame": "-12 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 2, 1+2",
@@ -1680,7 +1847,8 @@
                 "blockFrame": "-18~-17 OC",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 2, 1+2*",
@@ -1690,7 +1858,8 @@
                 "blockFrame": "-1~0",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 3",
@@ -1700,7 +1869,8 @@
                 "blockFrame": "-16~-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 4",
@@ -1710,7 +1880,8 @@
                 "blockFrame": "0",
                 "hitFrame": "KND",
                 "counterHitFrame": "CS",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 4, 1+2",
@@ -1720,7 +1891,8 @@
                 "blockFrame": "+3",
                 "hitFrame": "KND",
                 "counterHitFrame": "CS",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 4, 3+4",
@@ -1730,7 +1902,8 @@
                 "blockFrame": "-3",
                 "hitFrame": "KND",
                 "counterHitFrame": "CS",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN 1+2",
@@ -1740,7 +1913,8 @@
                 "blockFrame": "-6~-4",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN f+2",
@@ -1750,7 +1924,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "KND",
                 "counterHitFrame": "SCD",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN b+1+2",
@@ -1760,7 +1935,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "KIN u+1+2",
@@ -1770,7 +1946,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "3+4 or BT 3+4 (to MED)",
@@ -1780,7 +1957,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "MED 3+4",
@@ -1790,7 +1968,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "MED f or b,",
@@ -1800,7 +1979,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "MED 3 (Opponent behind)",
@@ -1810,7 +1990,8 @@
                 "blockFrame": "+3~+12",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "MED 1+2",
@@ -1820,7 +2001,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "MED 1+4",
@@ -1830,7 +2012,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1+2 (to FLE)",
@@ -1840,7 +2023,8 @@
                 "blockFrame": "+18 GB",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE d/b (Cancel)",
@@ -1850,7 +2034,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE 1",
@@ -1860,7 +2045,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE 2",
@@ -1870,7 +2056,8 @@
                 "blockFrame": "-13~-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE 3 or 4",
@@ -1880,7 +2067,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE f or b (to WFL)",
@@ -1890,7 +2078,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WFL 4",
@@ -1900,7 +2089,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "+11 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE f, f",
@@ -1910,7 +2100,8 @@
                 "blockFrame": "+6",
                 "hitFrame": "+17",
                 "counterHitFrame": "+17",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE f, f (Second hit miss)",
@@ -1920,7 +2111,8 @@
                 "blockFrame": "-3",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE d",
@@ -1930,7 +2122,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE d/b or d or d/f+3+4",
@@ -1940,7 +2133,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE u/b or u or u/f+1+2",
@@ -1950,7 +2144,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE u+3+4",
@@ -1960,7 +2155,8 @@
                 "blockFrame": "+3~+4",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE u+3+4, Any button",
@@ -1970,7 +2166,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FLE u/b or u or u/f",
@@ -1980,7 +2177,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+3+4 (to IND)",
@@ -1990,7 +2188,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "IND n (to INS)",
@@ -2000,7 +2199,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "INS 1",
@@ -2010,7 +2210,8 @@
                 "blockFrame": "0 OC",
                 "hitFrame": "0 OC",
                 "counterHitFrame": "0 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "INS 2",
@@ -2020,7 +2221,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "+2~+3",
                 "counterHitFrame": "+2~+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "INS 3",
@@ -2030,7 +2232,8 @@
                 "blockFrame": "-31~-25",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "INS 4",
@@ -2040,7 +2243,8 @@
                 "blockFrame": "-21",
                 "hitFrame": "+3? OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "INS B or F",
@@ -2050,7 +2254,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "INS 3+4* D or b or f or u",
@@ -2060,7 +2265,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "INS 1+2",
@@ -2070,7 +2276,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "INS u+1+2",
@@ -2080,7 +2287,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u+1+2 (to DGF)",
@@ -2090,7 +2298,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "DGF b or f",
@@ -2100,7 +2309,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "DGF d/b or d or d/f (Cancel)",
@@ -2110,7 +2320,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "DGF 1",
@@ -2120,7 +2331,8 @@
                 "blockFrame": "0s",
                 "hitFrame": "0s",
                 "counterHitFrame": "0s",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "DGF 3",
@@ -2130,7 +2342,8 @@
                 "blockFrame": "-14",
                 "hitFrame": "+5?s",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "DGF 4",
@@ -2140,7 +2353,8 @@
                 "blockFrame": "-6~-5?",
                 "hitFrame": "+13k",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "DGF 1+2",
@@ -2150,7 +2364,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "DGF f+2",
@@ -2160,7 +2375,8 @@
                 "blockFrame": "-?",
                 "hitFrame": "KND",
                 "counterHitFrame": "SCD",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "DGF d+3+4",
@@ -2170,7 +2386,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 1",
@@ -2180,7 +2397,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "+5",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 1, 2",
@@ -2190,7 +2408,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+5",
                 "counterHitFrame": "hKZD",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 1, 3",
@@ -2200,7 +2419,8 @@
                 "blockFrame": "-7",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 2",
@@ -2210,7 +2430,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+13kg",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 2, d/b+2",
@@ -2220,7 +2441,8 @@
                 "blockFrame": "-5~-4",
                 "hitFrame": "+6~+7",
                 "counterHitFrame": "+6~+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 3",
@@ -2230,7 +2452,8 @@
                 "blockFrame": "-3~-2",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT d/b or d or d/f+1",
@@ -2240,7 +2463,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT u+2+3",
@@ -2250,7 +2474,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2+3 (to NSS)",
@@ -2260,7 +2485,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 2+3",
@@ -2270,7 +2496,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 1",
@@ -2280,7 +2507,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 1, 2",
@@ -2290,7 +2518,8 @@
                 "blockFrame": "-13~-12",
                 "hitFrame": "-2~-1",
                 "counterHitFrame": "-2~-1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 1, 2, 1",
@@ -2300,7 +2529,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "-1",
                 "counterHitFrame": "-1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 2",
@@ -2310,7 +2540,8 @@
                 "blockFrame": "-1",
                 "hitFrame": "+5",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 2, 1",
@@ -2320,7 +2551,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 1+4 or FC+1+2",
@@ -2330,7 +2562,8 @@
                 "blockFrame": "-16~-15",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 4~1",
@@ -2340,7 +2573,8 @@
                 "blockFrame": "-16~-15",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 1+2+3",
@@ -2350,7 +2584,8 @@
                 "blockFrame": "-18",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f+1+2",
@@ -2360,7 +2595,8 @@
                 "blockFrame": "-13~-12",
                 "hitFrame": "+4~+5",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f+3+4",
@@ -2370,7 +2606,8 @@
                 "blockFrame": "-14~-10?",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Power crush"
+                "notes": "Power crush",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/f+3",
@@ -2380,7 +2617,8 @@
                 "blockFrame": "-4~-3",
                 "hitFrame": "+4~+5",
                 "counterHitFrame": "+4~+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/f+3, 1",
@@ -2390,7 +2628,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+5 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d+1",
@@ -2400,7 +2639,8 @@
                 "blockFrame": "-7~-6 OC",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d+1+4",
@@ -2410,7 +2650,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d+2, 1",
@@ -2420,7 +2661,8 @@
                 "blockFrame": "–",
                 "hitFrame": "+k",
                 "counterHitFrame": "",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/b+1",
@@ -2430,7 +2672,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS b+2",
@@ -2440,7 +2683,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+2",
                 "counterHitFrame": "+2",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS b+2, 2",
@@ -2450,7 +2694,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "0",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/b+1+2",
@@ -2460,7 +2705,8 @@
                 "blockFrame": "CS",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/b+1+2, 1",
@@ -2470,7 +2716,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/b+1+2, 1+2",
@@ -2480,7 +2727,8 @@
                 "blockFrame": "-15~-14",
                 "hitFrame": "-4~-3",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u+1+2",
@@ -2490,7 +2738,8 @@
                 "blockFrame": "+4 OC",
                 "hitFrame": "+20 OC",
                 "counterHitFrame": "+20 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/f+3+4, b+1, 4, d+1",
@@ -2500,7 +2749,8 @@
                 "blockFrame": "-7~-6 OC",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS b, B+1+4",
@@ -2510,7 +2760,8 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS b, B+1+4, B (Cancel)",
@@ -2520,7 +2771,8 @@
                 "blockFrame": "-15",
                 "hitFrame": "CS",
                 "counterHitFrame": "CS",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f, F+1+4",
@@ -2530,7 +2782,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS qcf+1",
@@ -2540,7 +2793,8 @@
                 "blockFrame": "-8~-6 OC",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS WS+2, 1",
@@ -2550,7 +2804,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "+5",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS WS+2, 1, 2",
@@ -2560,7 +2815,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+5",
                 "counterHitFrame": "FS(+10 GB) 18",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS WS+2, 1, 3",
@@ -2570,7 +2826,8 @@
                 "blockFrame": "-7",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS FC+d/b, b+1 FC+D/F+1",
@@ -2580,7 +2837,8 @@
                 "blockFrame": "-14~-13?",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS FC+d/b, b+1, 2",
@@ -2590,7 +2848,8 @@
                 "blockFrame": "-20",
                 "hitFrame": "+14",
                 "counterHitFrame": "+14",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS FC+D/F+3",
@@ -2600,7 +2859,8 @@
                 "blockFrame": "-19?",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT d/b or d or d/f+1",
@@ -2610,7 +2870,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS IND 1",
@@ -2620,7 +2881,8 @@
                 "blockFrame": "-8~-5 OC",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d+1+2 or d+3+4 (to IND)",
@@ -2630,7 +2892,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/f+1+2",
@@ -2640,7 +2903,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS KIN 1",
@@ -2650,7 +2914,8 @@
                 "blockFrame": "-8~-7 OC",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "Command",
@@ -2660,7 +2925,8 @@
                 "blockFrame": "Block frame",
                 "hitFrame": "Hit frame",
                 "counterHitFrame": "Counter hit frame",
-                "notes": "Notes"
+                "notes": "Notes",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "1",
@@ -2670,7 +2936,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "2",
@@ -2680,7 +2947,8 @@
                 "blockFrame": "-1",
                 "hitFrame": "+5",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "3",
@@ -2690,7 +2958,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+5",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "4",
@@ -2700,7 +2969,8 @@
                 "blockFrame": "-11",
                 "hitFrame": "0",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+1",
@@ -2710,7 +2980,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+7",
                 "counterHitFrame": "+12",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+2",
@@ -2720,7 +2991,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+2",
                 "counterHitFrame": "+2",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+3 (SSL)",
@@ -2730,7 +3002,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "b+4 (SSR)",
@@ -2740,7 +3013,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+1",
@@ -2750,7 +3024,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+2",
@@ -2760,7 +3035,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+k",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+3",
@@ -2770,7 +3046,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f+4",
@@ -2780,7 +3057,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+1",
@@ -2790,7 +3068,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "f, F+3",
@@ -2800,7 +3079,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+4",
                 "counterHitFrame": "CS 12",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+1",
@@ -2810,7 +3090,8 @@
                 "blockFrame": "-5~-4",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+2",
@@ -2820,7 +3101,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "0~+1",
                 "counterHitFrame": "0~+1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+3",
@@ -2830,7 +3112,8 @@
                 "blockFrame": "-18~-17",
                 "hitFrame": "-4~-3",
                 "counterHitFrame": "-4~-3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d+4",
@@ -2840,7 +3123,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "-2",
                 "counterHitFrame": "-2",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+1",
@@ -2850,7 +3134,8 @@
                 "blockFrame": "-16",
                 "hitFrame": "0 OC",
                 "counterHitFrame": "0 OC",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+2",
@@ -2860,7 +3145,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3",
@@ -2870,7 +3156,8 @@
                 "blockFrame": "-25~-24",
                 "hitFrame": "-14~-13",
                 "counterHitFrame": "-14~-13",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+4",
@@ -2880,7 +3167,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "-1",
                 "counterHitFrame": "-1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/b+3+4j",
@@ -2890,7 +3178,8 @@
                 "blockFrame": "-17",
                 "hitFrame": "-3",
                 "counterHitFrame": "-3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FC+1",
@@ -2900,7 +3189,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FC+2",
@@ -2910,7 +3200,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+7",
                 "counterHitFrame": "+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FC+d/b+3",
@@ -2920,7 +3211,8 @@
                 "blockFrame": "-25~-24",
                 "hitFrame": "-14~-13",
                 "counterHitFrame": "-14~-13",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FC+d or d/f+3",
@@ -2930,7 +3222,8 @@
                 "blockFrame": "-17",
                 "hitFrame": "-3",
                 "counterHitFrame": "-3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "FC+d/b or d+4",
@@ -2940,7 +3233,8 @@
                 "blockFrame": "-15",
                 "hitFrame": "-4",
                 "counterHitFrame": "-4",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1",
@@ -2950,7 +3244,8 @@
                 "blockFrame": "-10~-9",
                 "hitFrame": "+1~+2",
                 "counterHitFrame": "+6~+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+2",
@@ -2960,7 +3255,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+7",
                 "counterHitFrame": "+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+1+2",
@@ -2970,7 +3266,8 @@
                 "blockFrame": "-4~-3",
                 "hitFrame": "+7~+8",
                 "counterHitFrame": "+7~+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+3 or 3+4",
@@ -2980,7 +3277,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "WS+4",
@@ -2990,7 +3288,8 @@
                 "blockFrame": "-6~-5",
                 "hitFrame": "+5~+6",
                 "counterHitFrame": "+5~+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+1",
@@ -3000,7 +3299,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+5",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+3",
@@ -3010,7 +3310,8 @@
                 "blockFrame": "-4~-3",
                 "hitFrame": "+4~+5",
                 "counterHitFrame": "+4~+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "d/f+4",
@@ -3020,7 +3321,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+4",
                 "counterHitFrame": "+4",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b or u+1",
@@ -3030,7 +3332,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+1",
@@ -3040,7 +3343,8 @@
                 "blockFrame": "-5,6?",
                 "hitFrame": "+s",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b or u+2",
@@ -3050,7 +3354,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "+9 GB",
                 "counterHitFrame": "+9 GB",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/f+2",
@@ -3060,7 +3365,8 @@
                 "blockFrame": "-16",
                 "hitFrame": "+8?",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b or u+3",
@@ -3070,7 +3376,8 @@
                 "blockFrame": "-29",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u/b+4",
@@ -3080,7 +3387,8 @@
                 "blockFrame": "-19",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "u or u/f+4",
@@ -3090,7 +3398,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Homing"
+                "notes": "Homing",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "SS+3",
@@ -3100,7 +3409,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+5",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "SS+4",
@@ -3110,7 +3420,8 @@
                 "blockFrame": "0",
                 "hitFrame": "KND",
                 "counterHitFrame": "CS",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 1",
@@ -3120,7 +3431,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "+5",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 2",
@@ -3130,7 +3442,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+k",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 3",
@@ -3140,7 +3453,8 @@
                 "blockFrame": "-3~-2",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 1+2",
@@ -3150,7 +3464,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT 4",
@@ -3160,7 +3475,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT d/b+2",
@@ -3170,7 +3486,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT d or d/f+2",
@@ -3180,7 +3497,8 @@
                 "blockFrame": "-2",
                 "hitFrame": "+9",
                 "counterHitFrame": "+9",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "BT d+4 or d+3",
@@ -3190,7 +3508,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 1",
@@ -3200,7 +3519,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 2",
@@ -3210,7 +3530,8 @@
                 "blockFrame": "-1",
                 "hitFrame": "+5",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 3",
@@ -3220,7 +3541,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+5",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS 4",
@@ -3230,7 +3552,8 @@
                 "blockFrame": "-11",
                 "hitFrame": "0",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS b+1",
@@ -3240,7 +3563,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+7",
                 "counterHitFrame": "+12",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS b+2",
@@ -3250,7 +3574,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+2",
                 "counterHitFrame": "+2",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS b+3 (SSL)",
@@ -3260,7 +3585,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS b+4 (SSR)",
@@ -3270,7 +3596,8 @@
                 "blockFrame": "",
                 "hitFrame": "",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f+1",
@@ -3280,7 +3607,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f+2",
@@ -3290,7 +3618,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+k",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f+3",
@@ -3300,7 +3629,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f+4",
@@ -3310,7 +3640,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f, F+1",
@@ -3320,7 +3651,8 @@
                 "blockFrame": "+1",
                 "hitFrame": "+8",
                 "counterHitFrame": "+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS f, F+3",
@@ -3330,7 +3662,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+4",
                 "counterHitFrame": "CS 12",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d+1",
@@ -3340,7 +3673,8 @@
                 "blockFrame": "-7~-6 OC",
                 "hitFrame": "0~+1 OC",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d+2",
@@ -3350,7 +3684,8 @@
                 "blockFrame": "-9~-8",
                 "hitFrame": "0~+1",
                 "counterHitFrame": "0~+1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d+3",
@@ -3360,7 +3695,8 @@
                 "blockFrame": "-18~-17",
                 "hitFrame": "-4~-3",
                 "counterHitFrame": "-4~-3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d+4",
@@ -3370,7 +3706,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "-2",
                 "counterHitFrame": "-2",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/b+1",
@@ -3380,7 +3717,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/b+2",
@@ -3390,7 +3728,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/b+3",
@@ -3400,7 +3739,8 @@
                 "blockFrame": "-25~-24",
                 "hitFrame": "-14~-13",
                 "counterHitFrame": "-14~-13",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/b+4",
@@ -3410,7 +3750,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "-1",
                 "counterHitFrame": "-1",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/b+3+4j",
@@ -3420,7 +3761,8 @@
                 "blockFrame": "-17",
                 "hitFrame": "-3",
                 "counterHitFrame": "-3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS FC+1",
@@ -3430,7 +3772,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS FC+2",
@@ -3440,7 +3783,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+7",
                 "counterHitFrame": "+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS FC+d/b+3",
@@ -3450,7 +3794,8 @@
                 "blockFrame": "-25~-24",
                 "hitFrame": "-14~-13",
                 "counterHitFrame": "-14~-13",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS FC+d+3",
@@ -3460,7 +3805,8 @@
                 "blockFrame": "-17",
                 "hitFrame": "-3",
                 "counterHitFrame": "-3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS FC+d/b or d+4",
@@ -3470,7 +3816,8 @@
                 "blockFrame": "-15",
                 "hitFrame": "-4",
                 "counterHitFrame": "-4",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS WS+1",
@@ -3480,7 +3827,8 @@
                 "blockFrame": "-10~-9",
                 "hitFrame": "+1~+2",
                 "counterHitFrame": "+6~+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS WS+2",
@@ -3490,7 +3838,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+7",
                 "counterHitFrame": "+7",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS WS+1+2",
@@ -3500,7 +3849,8 @@
                 "blockFrame": "-4~-3",
                 "hitFrame": "+7~+8",
                 "counterHitFrame": "+7~+8",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS WS+3 or 3+4",
@@ -3510,7 +3860,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS WS+4",
@@ -3520,7 +3871,8 @@
                 "blockFrame": "-6~-5",
                 "hitFrame": "+5~+6",
                 "counterHitFrame": "+5~+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/f+1",
@@ -3530,7 +3882,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+5",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/f+3",
@@ -3540,7 +3893,8 @@
                 "blockFrame": "-4~-3",
                 "hitFrame": "+4~+5",
                 "counterHitFrame": "+4~+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS d/f+4",
@@ -3550,7 +3904,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+4",
                 "counterHitFrame": "+4",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/b or u or u/f+1",
@@ -3560,7 +3915,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/b or u+2",
@@ -3570,7 +3926,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "+9 GB",
                 "counterHitFrame": "+9 GB",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/f+2",
@@ -3580,7 +3937,8 @@
                 "blockFrame": "-18",
                 "hitFrame": "+4",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/b or u+3",
@@ -3590,7 +3948,8 @@
                 "blockFrame": "-29",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u/b+4",
@@ -3600,7 +3959,8 @@
                 "blockFrame": "-19",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS u or u/f+4",
@@ -3610,7 +3970,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": "Homing"
+                "notes": "Homing",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS SS+3",
@@ -3620,7 +3981,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+5",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS SS+4",
@@ -3630,7 +3992,8 @@
                 "blockFrame": "0",
                 "hitFrame": "KND",
                 "counterHitFrame": "CS",
-                "notes": "Homing, Tail spin"
+                "notes": "Homing, Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT 1",
@@ -3640,7 +4003,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "+5",
                 "counterHitFrame": "+5",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT 2",
@@ -3650,7 +4014,8 @@
                 "blockFrame": "-4",
                 "hitFrame": "+k",
                 "counterHitFrame": "SCD",
-                "notes": "Tail spin"
+                "notes": "Tail spin",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT 3",
@@ -3660,7 +4025,8 @@
                 "blockFrame": "-3~-2",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT 1+2",
@@ -3670,7 +4036,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT 4",
@@ -3680,7 +4047,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT d/b+2",
@@ -3690,7 +4058,8 @@
                 "blockFrame": "-5",
                 "hitFrame": "+6",
                 "counterHitFrame": "+6",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT d or d/f+2",
@@ -3700,7 +4069,8 @@
                 "blockFrame": "-2",
                 "hitFrame": "+9",
                 "counterHitFrame": "+9",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             },
             {
                 "command": "NSS BT d+4 or d+3",
@@ -3710,7 +4080,8 @@
                 "blockFrame": "-8",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": ""
+                "notes": "",
+                "type": "Basic / Special Move"
             }
         ],
         "launchers": [
@@ -3722,7 +4093,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "f+3, 4",
@@ -3732,7 +4104,8 @@
                 "blockFrame": "-6",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "d/f+2",
@@ -3742,7 +4115,8 @@
                 "blockFrame": "-7~-6",
                 "hitFrame": "Launch (JG?)(+4a)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "b+2, 1",
@@ -3752,7 +4126,8 @@
                 "blockFrame": "-17~-16",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "b+2, 1, 1+2",
@@ -3762,7 +4137,8 @@
                 "blockFrame": "-7",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "u/f+3",
@@ -3772,7 +4148,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "u/f+3+4, 3+4",
@@ -3782,7 +4159,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "u/f+3+4, b+1, 4",
@@ -3792,7 +4170,8 @@
                 "blockFrame": "-14~+7",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "f, F+4",
@@ -3802,7 +4181,8 @@
                 "blockFrame": "-5~-4?",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "f, F+3+4, 1+2, 3+4",
@@ -3812,7 +4192,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "f, n, d, d/f+1",
@@ -3822,7 +4203,8 @@
                 "blockFrame": "-15~-14",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "f, n, d, d/f+1, 1+2",
@@ -3832,7 +4214,8 @@
                 "blockFrame": "-7~-6",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "WS+2, 1",
@@ -3842,7 +4225,8 @@
                 "blockFrame": "-9?",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "SS+1",
@@ -3852,7 +4236,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+2",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "SS+2",
@@ -3862,7 +4247,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "KIN 2",
@@ -3872,7 +4258,8 @@
                 "blockFrame": "-14",
                 "hitFrame": "Launch(JG?)",
                 "counterHitFrame": "Launch(JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "MED 3 (Opponent in front)",
@@ -3882,7 +4269,8 @@
                 "blockFrame": "-14~-3",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "FLE 1+2",
@@ -3892,7 +4280,8 @@
                 "blockFrame": "-8~-7",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "FLE 3+4",
@@ -3902,7 +4291,8 @@
                 "blockFrame": "-12",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "INS 3, 3+4",
@@ -3912,7 +4302,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "DGF 2",
@@ -3922,7 +4313,8 @@
                 "blockFrame": "+4~+5",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "f, F+4",
@@ -3932,7 +4324,8 @@
                 "blockFrame": "-6~-5",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "d/f+2",
@@ -3942,7 +4335,8 @@
                 "blockFrame": "-7~-6",
                 "hitFrame": "Launch (JG?)(+4a)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "u/f+3",
@@ -3952,7 +4346,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "SS+1",
@@ -3962,7 +4357,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+2",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "SS+2",
@@ -3972,7 +4368,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "NSS f, F+4",
@@ -3982,7 +4379,8 @@
                 "blockFrame": "-6~-5",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "NSS d/f+2",
@@ -3992,7 +4390,8 @@
                 "blockFrame": "-7~-6",
                 "hitFrame": "Launch (JG?)(+4)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "NSS u/f+3",
@@ -4002,7 +4401,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "NSS SS+1",
@@ -4012,7 +4412,8 @@
                 "blockFrame": "-9",
                 "hitFrame": "+2",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             },
             {
                 "command": "NSS SS+2",
@@ -4022,7 +4423,8 @@
                 "blockFrame": "-13",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": ""
+                "notes": "",
+                "type": "Launcher"
             }
         ],
         "throws": [
@@ -4034,7 +4436,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "+3(Throw)",
                 "counterHitFrame": "+?(Throw)",
-                "notes": ""
+                "notes": "",
+                "type": "Throw"
             },
             {
                 "command": "MED 2+3",
@@ -4044,7 +4447,8 @@
                 "blockFrame": "",
                 "hitFrame": "Throw(0)",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Throw"
             },
             {
                 "command": "MED 2+3, F",
@@ -4054,7 +4458,8 @@
                 "blockFrame": "",
                 "hitFrame": "Throw(0)",
                 "counterHitFrame": "",
-                "notes": ""
+                "notes": "",
+                "type": "Throw"
             },
             {
                 "command": "MED 2+4 or MED 1+3",
@@ -4064,7 +4469,8 @@
                 "blockFrame": "Throw",
                 "hitFrame": "Throw",
                 "counterHitFrame": "Throw",
-                "notes": ""
+                "notes": "",
+                "type": "Throw"
             },
             {
                 "command": "WFL 3",
@@ -4074,7 +4480,8 @@
                 "blockFrame": "-17",
                 "hitFrame": "Throw(KND)",
                 "counterHitFrame": "Throw(KND)",
-                "notes": ""
+                "notes": "",
+                "type": "Throw"
             },
             {
                 "command": "DGF 3+4",
@@ -4084,7 +4491,8 @@
                 "blockFrame": "Throw",
                 "hitFrame": "Throw",
                 "counterHitFrame": "Throw",
-                "notes": ""
+                "notes": "",
+                "type": "Throw"
             },
             {
                 "command": "f, F+2",
@@ -4094,7 +4502,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "+3(Throw)",
                 "counterHitFrame": "+?(Throw)",
-                "notes": ""
+                "notes": "",
+                "type": "Throw"
             },
             {
                 "command": "NSS f, F+2",
@@ -4104,7 +4513,8 @@
                 "blockFrame": "-10",
                 "hitFrame": "+3(Throw)",
                 "counterHitFrame": "+?(Throw)",
-                "notes": ""
+                "notes": "",
+                "type": "Throw"
             }
         ]
     }

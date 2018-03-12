@@ -51,10 +51,13 @@ for(let x = 0; x <= characterNames.length; x++ ) {
           }
         });
         if (moveObj.hitFrame.includes('Launch') || moveObj.counterHitFrame.includes('Launch')) {
+          moveObj.type = 'Launcher';
           launchers.push(moveObj);
         } else if (moveObj.hitFrame.includes('Throw') || moveObj.counterHitFrame.includes('Throw')) {
+          moveObj.type = 'Throw';
           throws.push(moveObj);
         } else {
+          moveObj.type = 'Basic / Special Move';
           moves.push(moveObj);
         }
       });
