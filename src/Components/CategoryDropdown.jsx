@@ -15,11 +15,11 @@ export default class CategoryDropdown extends Component {
 
   render() {
     return (
-      <div>
+      <div className="category-container m-3">
         {this.props.characterData[0] !== undefined &&
         <div className="category-dropdown p-3">
           <button className="dropdown-btn" onClick={this.toggleClick}>
-            <h4>{`${this.props.characterData[0].type}s`}</h4>
+            {`${this.props.characterData[0].type}s`}
           </button>
           <Collapse isOpen={this.state.collapse}>
             <DataTable characterData={this.props.characterData} />

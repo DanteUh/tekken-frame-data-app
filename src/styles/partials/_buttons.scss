@@ -1,0 +1,21 @@
+.dropdown-btn {
+  min-width: 200px;
+  text-align: center;
+  font-family: $font-heading;
+  font-size: 1.3rem;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  border: none;
+  border-bottom: solid $border-color 1px;
+  background-color: rgb(50, 64, 94);
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown-btn:hover {
+  background-color: rgb(66, 128, 170);
+}
+
+.dropdown-btn:focus {
+  outline: 0;
+}

@@ -1,5 +1,39 @@
-.App {
-  background-color: black; }
+@import url("https://fonts.googleapis.com/css?family=Rajdhani");
+.category-container {
+  border-radius: 5px; }
+
+.data-table {
+  background-color: #3b3b3b;
+  border-radius: 0 5px 5px 5px; }
+
+.ReactTable {
+  border: none; }
+
+.dropdown-btn {
+  min-width: 200px;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.3rem;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  border: none;
+  border-bottom: solid #333333 1px;
+  background-color: #32405e;
+  transition: 0.3s ease-in-out; }
+
+.dropdown-btn:hover {
+  background-color: #4280aa; }
+
+.dropdown-btn:focus {
+  outline: 0; }
+
+.app-container {
+  background-color: rgba(26, 26, 26, 0.712); }
 
 body {
-  background-color: red; }
+  background: url(images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
