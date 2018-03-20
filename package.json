@@ -5,6 +5,8 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "cheerio": "^1.0.0-rc.2",
+    "node-sass-chokidar": "^1.1.2",
+    "normalize.css": "^8.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -14,7 +16,9 @@
     "request": "^2.83.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "start-js": "react-scripts start",
+    "watch-css": "node-sass-chokidar src/ -o src/ --watch",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
