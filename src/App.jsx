@@ -6,7 +6,7 @@ import characters from './Server/characterNames';
 import CharacterNavigation from './Components/CharacterNavigation';
 import CategoryDropdown from './Components/CategoryDropdown';
 
-class App extends Component {
+export default class App extends Component {
   state = {
     characterList: characters.characterNames,
     selectedCharacter: 'akuma',
@@ -76,5 +76,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
