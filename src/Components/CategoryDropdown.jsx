@@ -9,6 +9,10 @@ export default class CategoryDropdown extends Component {
     collapse: true,
   }
 
+  toggleClick = () => {
+    this.setState({ collapse: !this.state.collapse });
+  };
+
   render() {
     return (
       <div>
@@ -27,6 +31,6 @@ export default class CategoryDropdown extends Component {
   }
 }
 
-/* CategoryDropdown.propTypes = {
+CategoryDropdown.propTypes = {
   characterData: PropTypes.array.isRequired,
-} */
+}
