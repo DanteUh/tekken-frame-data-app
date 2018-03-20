@@ -17,7 +17,7 @@ export default class App extends Component {
     this.fetchCharacterData(this.state.selectedCharacter);
   }
 
-  handleClick = (e) => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
     this.fetchCharacterData(this.state.selectedCharacter);
   };
@@ -60,7 +60,8 @@ export default class App extends Component {
                   type="select"
                   name="selectedCharacter"
                   className="character-select"
-                  onChange={this.handleClick}
+                  onChange={this.handleChange}
+                  onClick={this.handleChange}
                   value={this.state.selectedCharacter}
                 >
                   {characterNavigation}
