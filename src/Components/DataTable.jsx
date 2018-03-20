@@ -2,7 +2,7 @@ import React from 'react';
 import ReactTable from 'react-table';
 
 const DataTable = props => (
-  <div className="data-table">
+  <div className="data-table p-3">
     <ReactTable
       filterable
       defaultFilterMethod={(filter, row) =>
@@ -42,7 +42,7 @@ const DataTable = props => (
         },
       ]}
       data={props.characterData}
-      defaultPageSize={15}
+      defaultPageSize={10}
       className="-striped -highlight"
     />
   </div>

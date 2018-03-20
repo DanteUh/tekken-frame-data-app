@@ -51,27 +51,23 @@ export default class App extends Component {
       );
     });
     return (
-      <div className="App">
-        <Container>
-          <Row>
-            <Col>
-              <div className="character-nav">
-                <Input
-                  type="select"
-                  name="selectedCharacter"
-                  className="character-select"
-                  onChange={this.handleChange}
-                  onClick={this.handleChange}
-                  value={this.state.selectedCharacter}
-                >
-                  {characterNavigation}
-                </Input>
-              </div>
-              <div className="data-container bg-dark text-white">
-                {categoryDropdown}
-              </div>
-            </Col>
-          </Row>
+      <div className="app-body">
+        <Container className="app-container pt-3">
+          <div className="character-nav">
+            <Input
+              type="select"
+              name="selectedCharacter"
+              className="character-select"
+              onChange={this.handleChange}
+              onClick={this.handleChange}
+              value={this.state.selectedCharacter}
+            >
+              {characterNavigation}
+            </Input>
+          </div>
+          <div className="data-container text-white p-3">
+            {categoryDropdown}
+          </div>
         </Container>
       </div>
     );
