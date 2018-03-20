@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Input } from 'reactstrap';
-import './App.css';
 import characters from './Server/characterNames';
 
 // Components
@@ -47,7 +46,8 @@ class App extends Component {
       return (
         <CategoryDropdown
           key={i}
-          characterData={data} />
+          characterData={data}
+          selectedCharacter={this.state.selectedCharacter}/>
       );
     });
     return (
@@ -60,8 +60,8 @@ class App extends Component {
                   type="select"
                   name="selectedCharacter"
                   className="character-select"
-                  onClick={this.handleClick} 
-                  value={this.state.characterName}
+                  onChange={this.handleClick}
+                  value={this.state.selectedCharacter}
                 >
                   {characterNavigation}
                 </Input>
