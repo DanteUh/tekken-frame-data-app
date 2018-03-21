@@ -1,8 +1,9 @@
 .data-table {
-  background-color: $solid-bg;
-  border-radius: 0 $border-radius $border-radius $border-radius;
+  background-color: $gray-opacity;
+  border-radius: 0 0 $border-radius $border-radius;
 }
 
 .ReactTable {
+  width: 100%;
   border: none;
 }

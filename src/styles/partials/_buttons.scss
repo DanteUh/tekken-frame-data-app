@@ -1,21 +1,38 @@
-.dropdown-btn {
-  min-width: 200px;
-  text-align: center;
-  font-family: $font-heading;
-  font-size: 1.3rem;
-  padding: 10px 10px 10px 10px;
-  border-radius: 5px 5px 0 0;
-  color: white;
+// Custom Button
+.btn-custom {
+  font-weight: $heading-weight;
+  padding: 10px;
+  border-radius: $border-radius;
   border: none;
-  border-bottom: solid $border-color 1px;
-  background-color: rgb(50, 64, 94);
+  color: white;
+  background-color: $gray-solid;
   transition: 0.3s ease-in-out;
 }
 
-.dropdown-btn:hover {
-  background-color: rgb(66, 128, 170);
+.btn-custom:hover {
+  background-color: $blue-light;
+  cursor: pointer;
 }
 
-.dropdown-btn:focus {
+.btn-custom:focus {
   outline: 0;
+}
+
+// Dropdown
+.dropdown {
+  width: 100%;
+  text-align: start;
+  font-weight: $heading-weight;
+  font-size: 1.3rem;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  border: none;
+  border-bottom: solid $black-opacity 1px;
+  background-color: $gray-opacity;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown:hover {
+  background-color: $blue-light-opacity;
 }

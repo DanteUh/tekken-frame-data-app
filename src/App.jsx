@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Input } from 'reactstrap';
+import { Input } from 'reactstrap';
 import characters from './Server/characterNames';
 
 // Components
@@ -8,7 +8,6 @@ import CategoryDropdown from './Components/CategoryDropdown';
 
 export default class App extends Component {
   state = {
-    characterList: characters.characterNames,
     selectedCharacter: 'akuma',
     characterData: [],
   }
@@ -34,7 +33,7 @@ export default class App extends Component {
 
   render() {
     console.log(this.state.selectedCharacter);
-    const characterNavigation = this.state.characterList.map((char, i) => {
+    const characterNavigation = characters.characterNames.map((char, i) => {
       return (
         <CharacterNavigation
           key={i}
@@ -52,8 +51,8 @@ export default class App extends Component {
     });
     return (
       <div className="app-body">
-        <Container className="app-container pt-3">
-          <div className="character-nav">
+        <div className="app-container">
+          <div className="character-nav p-3">
             <Input
               type="select"
               name="selectedCharacter"
@@ -68,7 +67,7 @@ export default class App extends Component {
           <div className="data-container text-white p-3">
             {categoryDropdown}
           </div>
-        </Container>
+        </div>
       </div>
     );
   }

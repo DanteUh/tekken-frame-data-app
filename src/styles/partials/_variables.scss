@@ -1,6 +1,17 @@
 $border-radius: 5px;
 
-$solid-bg: rgb(59, 59, 59);
-$border-color: rgb(51, 51, 51);
+// Colors
+$black-solid: rgb(26, 26, 26);
+$black-opacity: rgba(26, 26, 26, 0.7);
 
-$font-heading: 'Rajdhani', sans-serif;
+$gray-solid: rgb(59, 59, 59);
+$gray-opacity: rgba(73, 73, 73, 0.7);
+
+$blue-deep: rgb(50, 64, 94);
+$blue-deep-opacity: rgba(50, 64, 94, 0.7);
+
+$blue-light: rgb(75, 118, 146);
+$blue-light-opacity: rgba(75, 118, 146, 0.85);
+
+// Font Style
+$heading-weight: 300;

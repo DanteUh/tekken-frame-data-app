@@ -15,10 +15,10 @@ export default class CategoryDropdown extends Component {
 
   render() {
     return (
-      <div className="category-container m-3">
+      <div className="category-container">
         {this.props.characterData[0] !== undefined &&
-        <div className="category-dropdown p-3">
-          <button className="dropdown-btn" onClick={this.toggleClick}>
+        <div className="category-dropdown mb-5">
+          <button className="btn-custom dropdown" onClick={this.toggleClick}>
             {`${this.props.characterData[0].type}s`}
           </button>
           <Collapse isOpen={this.state.collapse}>

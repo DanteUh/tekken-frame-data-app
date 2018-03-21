@@ -5,6 +5,14 @@
 @import 'data-table';
 @import 'buttons';
 
+.app-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .app-container {
-  background-color: rgba(26, 26, 26, 0.712);
+  width: 80%;
+  background-color: $black-opacity;
 }
