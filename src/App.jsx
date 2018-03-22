@@ -9,17 +9,13 @@ import CategoryDropdown from './Components/CategoryDropdown';
 export default class App extends Component {
   state = {
     selectedCharacter: 'akuma',
+    displayName: 'Akuma',
     characterData: [],
   }
 
   componentDidMount() {
     this.fetchCharacterData(this.state.selectedCharacter);
   }
-
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-    this.fetchCharacterData(this.state.selectedCharacter);
-  };
 
   fetchCharacterData = (character) => {
     const characterData = require(`./Server/CharacterData/${character}`);
@@ -31,8 +27,23 @@ export default class App extends Component {
     this.setState({ characterData: characterDataArray });
   };
 
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+    this.createDisplayName();
+    this.fetchCharacterData(this.state.selectedCharacter);
+  };
+
+  createDisplayName = () => {
+    const displayName = this.state.selectedCharacter.replace("-", " ")
+    .replace(/\w\S*/g, function(txt){
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+    });
+    this.setState({ displayName });
+  }
+
   render() {
     console.log(this.state.selectedCharacter);
+    console.log(this.state.displayName);
     const characterNavigation = characters.characterNames.map((char, i) => {
       return (
         <CharacterNavigation
@@ -51,8 +62,8 @@ export default class App extends Component {
     });
     return (
       <div className="app-body">
-        <div className="app-container">
-          <div className="character-nav p-3">
+        <div className="app-container p-4">
+          <div className="character-nav mb-5 mt-2">
             <Input
               type="select"
               name="selectedCharacter"
@@ -64,7 +75,11 @@ export default class App extends Component {
               {characterNavigation}
             </Input>
           </div>
-          <div className="data-container text-white p-3">
+          <h1 className="character-heading ml-1">
+            { this.state.displayName }
+          </h1>
+          <div className="horizontal-line mr-1" />
+          <div className="data-container text-white mt-3 mb-3">
             {categoryDropdown}
           </div>
         </div>
