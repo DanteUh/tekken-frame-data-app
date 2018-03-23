@@ -78,7 +78,7 @@ export default class App extends Component {
           <h1 className="character-heading ml-1">
             { this.state.displayName }
           </h1>
-          <div className="horizontal-line mr-1" />
+          <div className="horizontal-line" />
           <div className="data-container text-white mt-3 mb-3">
             {categoryDropdown}
           </div>
