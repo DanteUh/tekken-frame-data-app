@@ -1,10 +1,11 @@
 $border-radius: 5px;
 
 // Colors
-$black-solid: rgb(26, 26, 26);
+$black: rgb(26, 26, 26);
 $black-opacity: rgba(26, 26, 26, 0.7);
 
-$gray-solid: rgb(59, 59, 59);
+$gray: rgb(59, 59, 59);
+$gray-dark: rgb(41, 41, 41);
 $gray-opacity: rgba(59, 59, 59, 0.8);
 
 $blue-deep: rgb(50, 64, 94);
@@ -17,5 +18,8 @@ $blue-light-opacity: rgba(62, 109, 139, 0.9);
 $light-weight: 300;
 $regular-weight: 400;
 
+$size-data-p: 0.889em;
+$size-data-btn: 1.125em;
+
 // Alignment
-$table-padding-lr: 21px;
+$table-padding-lr: 15px;
