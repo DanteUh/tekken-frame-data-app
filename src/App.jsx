@@ -20,7 +20,7 @@ export default class App extends Component {
   fetchCharacterData = (character) => {
     const characterData = require(`./Server/CharacterData/${character}`);
     const characterDataArray = [
-      characterData.character.moves,
+      characterData.character.filteredMoves,
       characterData.character.launchers,
       characterData.character.throws,
     ];
