@@ -1,7 +1,7 @@
 {
     "character": {
         "name": "akuma",
-        "moves": [
+        "filteredMoves": [
             {
                 "command": "Command",
                 "hitLevel": "Hit level",
@@ -938,17 +938,6 @@
                 "type": "Basic / Special Move"
             },
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "1",
                 "hitLevel": "h",
                 "damage": "7",
@@ -1290,17 +1279,6 @@
                 "type": "Basic / Special Move"
             },
             {
-                "command": "WS+1",
-                "hitLevel": "h",
-                "damage": "12",
-                "startUpFrame": "13",
-                "blockFrame": "-5",
-                "hitFrame": "+6",
-                "counterHitFrame": "+6",
-                "notes": "",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "WS+3",
                 "hitLevel": "m",
                 "damage": "17",
@@ -1341,28 +1319,6 @@
                 "blockFrame": "-7",
                 "hitFrame": "+3",
                 "counterHitFrame": "+3",
-                "notes": "",
-                "type": "Basic / Special Move"
-            },
-            {
-                "command": "d/f+3",
-                "hitLevel": "m",
-                "damage": "14",
-                "startUpFrame": "12",
-                "blockFrame": "-9",
-                "hitFrame": "+1",
-                "counterHitFrame": "+1",
-                "notes": "",
-                "type": "Basic / Special Move"
-            },
-            {
-                "command": "d/f+4",
-                "hitLevel": "m",
-                "damage": "24",
-                "startUpFrame": "19",
-                "blockFrame": "-16",
-                "hitFrame": "KND",
-                "counterHitFrame": "KND",
                 "notes": "",
                 "type": "Basic / Special Move"
             },

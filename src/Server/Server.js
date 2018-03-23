@@ -62,9 +62,22 @@ for(let x = 0; x <= characterNames.length; x++ ) {
         }
       });
 
+      const removeDuplicates = (arr) => {
+        const hashTable = {};
+
+        return arr.filter(function (el) {
+          const key = JSON.stringify(el);
+          let match = Boolean(hashTable[key]);
+
+          return (match ? false : hashTable[key] = true);
+        });
+      }
+
+      const filteredMoves = removeDuplicates(moves);
+
       const character = {
         name: currentCharacter,
-        moves,
+        filteredMoves,
         launchers,
         throws,
       };
