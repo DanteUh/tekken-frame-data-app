@@ -1,3 +1,21 @@
 .category-container {
   border-radius: 5px;
 }
+
+// Dropdown
+.dropdown {
+  width: 100%;
+  text-align: start;
+  font-weight: $regular-weight;
+  padding: 10px $table-padding-lr 10px $table-padding-lr;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  border: none;
+  border-bottom: solid $black-opacity 1px;
+  background-color: $blue-deep;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown:hover {
+  background-color: $blue-light-opacity;
+}
