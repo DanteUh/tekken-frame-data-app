@@ -5,6 +5,7 @@ import characters from './Server/characterNames';
 // Components
 import CharacterNavigation from './Components/CharacterNavigation';
 import CategoryDropdown from './Components/CategoryDropdown';
+import CharacterMenu from './Components/CharacterMenu';
 
 export default class App extends Component {
   state = {
@@ -14,11 +15,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    this.fetchCharacterData(this.state.selectedCharacter);
+    this.fetchCharacterData();
   }
 
-  fetchCharacterData = (character) => {
-    const characterData = require(`./Server/CharacterData/${character}`);
+  fetchCharacterData = () => {
+    const characterData = require(`./Server/CharacterData/${this.state.selectedCharacter}`);
     const characterDataArray = [
       characterData.character.filteredMoves,
       characterData.character.launchers,
@@ -30,7 +31,7 @@ export default class App extends Component {
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
     this.createDisplayName();
-    this.fetchCharacterData(this.state.selectedCharacter);
+    this.fetchCharacterData();
   };
 
   createDisplayName = () => {
@@ -43,7 +44,6 @@ export default class App extends Component {
 
   render() {
     console.log(this.state.selectedCharacter);
-    console.log(this.state.displayName);
     const characterNavigation = characters.characterNames.map((char, i) => {
       return (
         <CharacterNavigation
@@ -64,7 +64,11 @@ export default class App extends Component {
       <div className="app-body">
         <div className="app-container p-4">
           <div className="character-nav mb-5 mt-2">
-            <Input
+            <CharacterMenu
+              handleChange={this.handleChange}
+              selectedCharacter={this.state.selectedCharacter}
+            />
+            {/* <Input
               type="select"
               name="selectedCharacter"
               className="character-select"
@@ -73,7 +77,7 @@ export default class App extends Component {
               value={this.state.selectedCharacter}
             >
               {characterNavigation}
-            </Input>
+            </Input> */}
           </div>
           <h1 className="character-heading ml-1">
             { this.state.displayName }

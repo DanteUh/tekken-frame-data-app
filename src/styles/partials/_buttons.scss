@@ -10,10 +10,20 @@
 }
 
 .btn-custom:hover {
-  background-color: $blue-light;
   cursor: pointer;
 }
 
 .btn-custom:focus {
   outline: 0;
+}
+
+// Custom Dropdown Button
+.dropdown-custom {
+  text-align: start;
+  font-size: $size-data-btn;
+  font-weight: $light-weight;
+  padding: 7px $table-padding-lr;
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out;
 }

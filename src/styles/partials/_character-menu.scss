@@ -1,0 +1,14 @@
+.character-menu {
+  width: 250px;
+  background-color: $orange;
+}
+
+.character-menu:hover {
+  background-color: $orange;
+}
+
+.dropdown-menu {
+  max-height: 400px;
+  width: 250px;
+  overflow: auto;
+}
