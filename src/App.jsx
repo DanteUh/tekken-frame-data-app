@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Input } from 'reactstrap';
 import characters from './Server/characterNames';
 
 // Components
-import CharacterNavigation from './Components/CharacterNavigation';
 import CategoryDropdown from './Components/CategoryDropdown';
+import CharacterMenu from './Components/CharacterMenu';
 
 export default class App extends Component {
   state = {
@@ -14,11 +13,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    this.fetchCharacterData(this.state.selectedCharacter);
+    this.fetchCharacterData();
   }
 
-  fetchCharacterData = (character) => {
-    const characterData = require(`./Server/CharacterData/${character}`);
+  fetchCharacterData = () => {
+    const characterData = require(`./Server/CharacterData/${this.state.selectedCharacter}`);
     const characterDataArray = [
       characterData.character.filteredMoves,
       characterData.character.launchers,
@@ -29,29 +28,23 @@ export default class App extends Component {
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    this.createDisplayName();
-    this.fetchCharacterData(this.state.selectedCharacter);
+    this.setSelectedCharacterDisplayName();
+    this.fetchCharacterData();
   };
 
-  createDisplayName = () => {
-    const displayName = this.state.selectedCharacter.replace("-", " ")
+  stringToUppercaseWithSpace = (string) => {
+    return string.replace("-", " ")
     .replace(/\w\S*/g, function(txt){
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
+  }
+
+  setSelectedCharacterDisplayName = () => {
+    const displayName = this.stringToUppercaseWithSpace(this.state.selectedCharacter);
     this.setState({ displayName });
   }
 
   render() {
-    console.log(this.state.selectedCharacter);
-    console.log(this.state.displayName);
-    const characterNavigation = characters.characterNames.map((char, i) => {
-      return (
-        <CharacterNavigation
-          key={i}
-          characterName={char} />
-      );
-    });
-
     const categoryDropdown = this.state.characterData.map((data, i) => {
       return (
         <CategoryDropdown
@@ -64,16 +57,12 @@ export default class App extends Component {
       <div className="app-body">
         <div className="app-container p-4">
           <div className="character-nav mb-5 mt-2">
-            <Input
-              type="select"
-              name="selectedCharacter"
-              className="character-select"
-              onChange={this.handleChange}
-              onClick={this.handleChange}
-              value={this.state.selectedCharacter}
-            >
-              {characterNavigation}
-            </Input>
+            <CharacterMenu
+              handleChange={this.handleChange}
+              selectedCharacter={this.state.selectedCharacter}
+              stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
+              selectedDisplayName={this.state.displayName}
+            />
           </div>
           <h1 className="character-heading ml-1">
             { this.state.displayName }

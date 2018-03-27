@@ -15,14 +15,14 @@ export default class CategoryDropdown extends Component {
 
   render() {
     return (
-      <div className="category-container">
+      <div className="category-container mb-5">
         {this.props.characterData[0] !== undefined &&
-        <div className="category-dropdown mb-5">
-          <button className="btn-custom dropdown d-flex justify-content-between align-items-center" onClick={this.toggleClick}>
+        <div>
+          <button className="category-dropdown btn-custom dropdown-custom d-flex justify-content-between align-items-center" onClick={this.toggleClick}>
             {`${this.props.characterData[0].type}s`}
             {this.state.collapse ?
-              <i className="fa fa-angle-up fa-2x" aria-hidden="true"></i> :
-              <i className="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+              <i className="fa fa-angle-up" aria-hidden="true"></i> :
+              <i className="fa fa-angle-down" aria-hidden="true"></i>
             }
           </button>
           <Collapse isOpen={this.state.collapse}>

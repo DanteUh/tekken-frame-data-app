@@ -4,20 +4,15 @@
 }
 
 // Dropdown
-.dropdown {
+.category-dropdown {
   width: 100%;
-  text-align: start;
-  font-size: $size-data-btn;
-  font-weight: $regular-weight;
-  padding: 5px $table-padding-lr;
+  padding: 12px $table-padding-lr;
   border-radius: 5px 5px 0 0;
-  color: white;
-  border: none;
   border-bottom: solid $black-opacity 1px;
   background-color: $blue-deep;
   transition: 0.3s ease-in-out;
 }
 
-.dropdown:hover {
+.category-dropdown:hover {
   background-color: $blue-light-opacity;
 }
