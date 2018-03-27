@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400");
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0; }
 
 h1 {
   font-size: 2.281em;
@@ -37,17 +38,37 @@ h1 {
   border: none;
   transition: 0.3s ease-in-out; }
 
+.character-menu, .menu-item {
+  padding: 0 15px 0 0; }
+
 .character-menu {
   width: 250px;
-  background-color: #c27036; }
+  border-radius: 0;
+  font-weight: 400;
+  background-color: #2a6ab5; }
+  .character-menu:hover {
+    background-color: #3e7caf; }
 
-.character-menu:hover {
-  background-color: #c27036; }
+.menu-item {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: #3b3b3b;
+  border-bottom: solid #7a7a7a 1px;
+  transition: 0.3s ease-in-out; }
+  .menu-item:hover {
+    background-color: #3e7caf;
+    color: white;
+    cursor: pointer; }
 
 .dropdown-menu {
+  padding: 0;
   max-height: 400px;
   width: 250px;
   overflow: auto; }
+
+.character-thumbnail {
+  width: 45px; }
 
 .category-container {
   border-radius: 5px;
@@ -62,7 +83,7 @@ h1 {
   transition: 0.3s ease-in-out; }
 
 .category-dropdown:hover {
-  background-color: rgba(62, 109, 139, 0.9); }
+  background-color: rgba(62, 124, 175, 0.9); }
 
 .data-table {
   background-color: rgba(59, 59, 59, 0.8);
@@ -80,7 +101,7 @@ h1 {
   color: #dadada; }
 
 .-sort-asc, .-sort-desc {
-  border-color: #4b7692; }
+  border-color: #3e7caf; }
 
 .app-body {
   width: 100%;

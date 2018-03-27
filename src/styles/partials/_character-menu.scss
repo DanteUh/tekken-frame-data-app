@@ -1,14 +1,38 @@
-.character-menu {
-  width: 250px;
-  background-color: $orange;
+.character-menu, .menu-item {
+  padding: 0 15px 0 0;
 }
 
-.character-menu:hover {
-  background-color: $orange;
+.character-menu {
+  width: 250px;
+  border-radius: 0;
+  font-weight: $regular-weight;
+  background-color: $blue;
+  &:hover {
+    background-color: $blue-light;
+  }
+}
+
+.menu-item {
+  font-family: 'Oswald', sans-serif;
+  font-weight: $light-weight;
+  color: white;
+  background-color: $gray;
+  border-bottom: solid $gray-light 1px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: $blue-light;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 .dropdown-menu {
+  padding: 0;
   max-height: 400px;
   width: 250px;
   overflow: auto;
+}
+
+.character-thumbnail {
+  width: 45px;
 }
