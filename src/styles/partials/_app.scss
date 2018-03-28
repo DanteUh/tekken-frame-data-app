@@ -17,6 +17,11 @@
 .app-container {
   width: 80%;
   background-color: $black-opacity;
+  .character-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
 
 // Media Queries
@@ -47,5 +52,18 @@
 @media screen and (max-width: 1200px) {
   .app-container {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app-container {
+    .character-header {
+      display: block;
+      text-align: center;
+      .character-nav {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 }

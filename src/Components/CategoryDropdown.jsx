@@ -14,7 +14,7 @@ export default class CategoryDropdown extends Component {
 
   render() {
     return (
-      <div className="category-container mb-5">
+      <div className="category-container mb-4">
         {this.props.characterData[0] !== undefined &&
         <div>
           <button className="category-dropdown btn-custom dropdown-custom d-flex justify-content-between align-items-center" onClick={this.toggleClick}>

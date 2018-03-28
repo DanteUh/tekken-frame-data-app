@@ -8,8 +8,8 @@
   border: none;
 }
 
-.ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input {
-  padding: 5px 3px;
+.ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input, .ReactTable .-pagination select {
+  padding: 3px 5px;
 }
 
 .ReactTable .-pagination .-btn {

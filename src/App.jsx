@@ -58,17 +58,19 @@ export default class App extends Component {
     return (
       <div className="app-body">
         <div className="app-container p-4">
-          <div className="character-nav mb-5 mt-2">
-            <CharacterMenu
-              handleChange={this.handleChange}
-              selectedCharacter={this.state.selectedCharacter}
-              stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
-              selectedDisplayName={displayName}
-            />
+          <div className="character-header mb-2">
+            <h1 className="character-heading ml-1">
+              { displayName }
+            </h1>
+            <div className="character-nav mt-2">
+              <CharacterMenu
+                handleChange={this.handleChange}
+                selectedCharacter={this.state.selectedCharacter}
+                stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
+                selectedDisplayName={displayName}
+              />
+            </div>
           </div>
-          <h1 className="character-heading ml-1">
-            { displayName }
-          </h1>
           <div className="horizontal-line" />
           <div className="data-container text-white mt-3 mb-3">
             {categoryDropdown}
