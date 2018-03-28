@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import characters from './Server/characterNames';
 
 // Components
 import CategoryDropdown from './Components/CategoryDropdown';
@@ -8,29 +7,29 @@ import CharacterMenu from './Components/CharacterMenu';
 export default class App extends Component {
   state = {
     selectedCharacter: 'akuma',
-    displayName: 'Akuma',
-    characterData: [],
   }
 
   componentDidMount() {
-    this.fetchCharacterData();
+    this.updateSelectedData();
   }
 
   fetchCharacterData = () => {
     const characterData = require(`./Server/CharacterData/${this.state.selectedCharacter}`);
-    const characterDataArray = [
+    return [
       characterData.character.filteredMoves,
       characterData.character.launchers,
       characterData.character.throws,
     ];
-    this.setState({ characterData: characterDataArray });
   };
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
+  };
+
+  updateSelectedData = () => {
     this.setSelectedCharacterDisplayName();
     this.fetchCharacterData();
-  };
+  }
 
   stringToUppercaseWithSpace = (string) => {
     return string.replace("-", " ")
@@ -45,7 +44,10 @@ export default class App extends Component {
   }
 
   render() {
-    const categoryDropdown = this.state.characterData.map((data, i) => {
+    const displayName = this.stringToUppercaseWithSpace(this.state.selectedCharacter);
+    const characterData = this.fetchCharacterData();
+
+    const categoryDropdown = characterData.map((data, i) => {
       return (
         <CategoryDropdown
           key={i}
@@ -61,11 +63,11 @@ export default class App extends Component {
               handleChange={this.handleChange}
               selectedCharacter={this.state.selectedCharacter}
               stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
-              selectedDisplayName={this.state.displayName}
+              selectedDisplayName={displayName}
             />
           </div>
           <h1 className="character-heading ml-1">
-            { this.state.displayName }
+            { displayName }
           </h1>
           <div className="horizontal-line" />
           <div className="data-container text-white mt-3 mb-3">

@@ -4,15 +4,15 @@ import characters from '../Server/characterNames';
 import CharacterList from './CharacterList';
 
 export default class CharacterMenu extends Component {
-  componentDidMount() {
-    this.importImages();
-    this.characterNamesToDisplayName();
-  }
-
   state = {
     dropdownOpen: false,
     characterThumbnails: [],
     displayNames: [],
+  }
+
+  componentDidMount() {
+    this.importImages();
+    this.characterNamesToDisplayName();
   }
 
   importImages = () => {
@@ -36,6 +36,8 @@ export default class CharacterMenu extends Component {
   render() {
     const selectedThumbnail = require(`../images/character-thumbnails/${this.props.selectedCharacter}.png`);
 
+    console.log(selectedThumbnail);
+
     const characterList = this.state.displayNames.map((char, i) => {
       return (
         <CharacterList
@@ -43,7 +45,7 @@ export default class CharacterMenu extends Component {
           characterName={char}
           handleChange={this.props.handleChange}
           characterThumbnail={this.state.characterThumbnails[i]}
-          selectedCharacter={characters.characterNames[i]} />
+          characterNameValue={characters.characterNames[i]} />
       );
     });
     return (
@@ -51,7 +53,8 @@ export default class CharacterMenu extends Component {
         isOpen={this.state.dropdownOpen}
         toggle={this.toggle}
         onClick={this.props.handleChange}
-        name="selectedCharacter"
+        onChange={this.props.handleChange}
+        value={this.props.selectedCharacter}
       >
       <DropdownToggle className="character-menu btn-custom dropdown-custom d-flex justify-content-between align-items-center">
         <div className="d-flex justify-content-between align-items-center">

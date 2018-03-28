@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Collapse } from 'reactstrap';
 import PropTypes from 'prop-types';
 import DataTable from './DataTable';
-import characters from '../Server/characterNames';
 
 export default class CategoryDropdown extends Component {
   state = {
