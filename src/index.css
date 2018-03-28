@@ -94,8 +94,8 @@ h1 {
   width: 100%;
   border: none; }
 
-.ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input {
-  padding: 5px 3px; }
+.ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input, .ReactTable .-pagination select {
+  padding: 3px 5px; }
 
 .ReactTable .-pagination .-btn {
   background-color: #292929;
@@ -114,6 +114,10 @@ h1 {
 .app-container {
   width: 80%;
   background-color: rgba(26, 26, 26, 0.7); }
+  .app-container .character-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; }
 
 @media screen and (min-width: 1670px) {
   .app-container {
@@ -134,6 +138,14 @@ h1 {
 @media screen and (max-width: 1200px) {
   .app-container {
     width: 100%; } }
+
+@media screen and (max-width: 450px) {
+  .app-container .character-header {
+    display: block;
+    text-align: center; }
+    .app-container .character-header .character-nav {
+      display: flex;
+      justify-content: center; } }
 
 body {
   background: url(images/background.jpg) no-repeat center center fixed;
