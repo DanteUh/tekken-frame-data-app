@@ -36,8 +36,6 @@ export default class CharacterMenu extends Component {
   render() {
     const selectedThumbnail = require(`../images/character-thumbnails/${this.props.selectedCharacter}.png`);
 
-    console.log(selectedThumbnail);
-
     const characterList = this.state.displayNames.map((char, i) => {
       return (
         <CharacterList
