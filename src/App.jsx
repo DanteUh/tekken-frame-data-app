@@ -58,17 +58,21 @@ export default class App extends Component {
     return (
       <div className="app-body">
         <div className="app-container p-4">
-          <div className="character-header mb-2">
-            <h1 className="character-heading ml-1">
-              { displayName }
-            </h1>
-            <div className="character-nav mt-2">
-              <CharacterMenu
-                handleChange={this.handleChange}
-                selectedCharacter={this.state.selectedCharacter}
-                stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
-                selectedDisplayName={displayName}
-              />
+          {/* .fixed-top-bar */}
+          <div className="navbar">
+          {/* character-header-fixed */}
+            <div className="character-header mb-2">
+              <h1 className="character-heading">
+                { displayName }
+              </h1>
+              <div className="character-nav mt-2">
+                <CharacterMenu
+                  handleChange={this.handleChange}
+                  selectedCharacter={this.state.selectedCharacter}
+                  stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
+                  selectedDisplayName={displayName}
+                />
+              </div>
             </div>
           </div>
           <div className="horizontal-line" />

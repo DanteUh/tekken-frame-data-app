@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'fonts';
 @import 'buttons';
+@import 'fixed-top-bar';
 @import 'character-menu';
 @import 'data-container';
 @import 'category-dropdown';
@@ -15,18 +16,15 @@
 }
 
 .app-container {
-  width: 80%;
   background-color: $black-opacity;
-  .character-header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
 }
 
 // Media Queries
 @media screen and (min-width: 1670px) {
   .app-container {
+    width: 60%;
+  }
+  .character-header-fixed {
     width: 60%;
   }
 }
@@ -35,16 +33,25 @@
   .app-container {
     width: 75%;
   }
+  .character-header-fixed {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 1500px) {
   .app-container {
     width: 85%;
   }
+  .character-header-fixed {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   .app-container {
+    width: 95%;
+  }
+  .character-header-fixed {
     width: 95%;
   }
 }

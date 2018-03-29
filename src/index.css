@@ -38,6 +38,28 @@ h1 {
   border: none;
   transition: 0.3s ease-in-out; }
 
+.fixed-top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #3b3b3b; }
+
+.character-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.navbar {
+  width: 100%;
+  padding: 5px 0; }
+
 .character-menu, .menu-item {
   padding: 0 15px 0 0; }
 
@@ -79,7 +101,7 @@ h1 {
   width: 100%;
   padding: 12px 15px;
   border-radius: 5px 5px 0 0;
-  border-bottom: solid rgba(26, 26, 26, 0.7) 1px;
+  border-bottom: solid rgba(26, 26, 26, 0.8) 1px;
   background-color: #32405e;
   transition: 0.3s ease-in-out; }
 
@@ -112,27 +134,30 @@ h1 {
   justify-content: space-evenly; }
 
 .app-container {
-  width: 80%;
-  background-color: rgba(26, 26, 26, 0.7); }
-  .app-container .character-header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between; }
+  background-color: rgba(26, 26, 26, 0.8); }
 
 @media screen and (min-width: 1670px) {
   .app-container {
+    width: 60%; }
+  .character-header-fixed {
     width: 60%; } }
 
 @media screen and (max-width: 1670px) {
   .app-container {
+    width: 75%; }
+  .character-header-fixed {
     width: 75%; } }
 
 @media screen and (max-width: 1500px) {
   .app-container {
+    width: 85%; }
+  .character-header-fixed {
     width: 85%; } }
 
 @media screen and (max-width: 1300px) {
   .app-container {
+    width: 95%; }
+  .character-header-fixed {
     width: 95%; } }
 
 @media screen and (max-width: 1200px) {
