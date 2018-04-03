@@ -3,17 +3,6 @@
         "name": "claudio",
         "filteredMoves": [
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "in rage d/f+1+2",
                 "hitLevel": "m",
                 "damage": "55",
@@ -1224,6 +1213,17 @@
                 "type": "Basic / Special Move"
             },
             {
+                "command": "u/b or u+4",
+                "hitLevel": "m (TJ)",
+                "damage": "",
+                "startUpFrame": "15",
+                "blockFrame": "-13",
+                "hitFrame": "KND?",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
                 "command": "SS+1",
                 "hitLevel": "h",
                 "damage": "9",
@@ -1353,17 +1353,6 @@
                 "startUpFrame": "15",
                 "blockFrame": "-14",
                 "hitFrame": "Launch (JG?)",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
-                "command": "u/b or u+4",
-                "hitLevel": "m (TJ)",
-                "damage": "",
-                "startUpFrame": "15",
-                "blockFrame": "-13",
-                "hitFrame": "KND?",
                 "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Launcher"

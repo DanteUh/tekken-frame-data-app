@@ -3,17 +3,6 @@
         "name": "yoshimitsu",
         "filteredMoves": [
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "in rage b+1+2",
                 "hitLevel": "m",
                 "damage": "",
@@ -1704,6 +1693,17 @@
                 "blockFrame": "KND",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
+                "command": "SS+1",
+                "hitLevel": "m",
+                "damage": "28",
+                "startUpFrame": "17(26~)",
+                "blockFrame": "-9",
+                "hitFrame": "+2",
+                "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Basic / Special Move"
             },
@@ -3677,6 +3677,17 @@
                 "type": "Basic / Special Move"
             },
             {
+                "command": "NSS SS+1",
+                "hitLevel": "m",
+                "damage": "28",
+                "startUpFrame": "17(26~)",
+                "blockFrame": "-9",
+                "hitFrame": "+2",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
                 "command": "NSS SS+3",
                 "hitLevel": "h",
                 "damage": "20",
@@ -3932,17 +3943,6 @@
                 "type": "Launcher"
             },
             {
-                "command": "SS+1",
-                "hitLevel": "m",
-                "damage": "28",
-                "startUpFrame": "17(26~)",
-                "blockFrame": "-9",
-                "hitFrame": "+2",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
                 "command": "SS+2",
                 "hitLevel": "m",
                 "damage": "27",
@@ -4053,17 +4053,6 @@
                 "type": "Launcher"
             },
             {
-                "command": "SS+1",
-                "hitLevel": "m",
-                "damage": "28",
-                "startUpFrame": "17(26~)",
-                "blockFrame": "-9",
-                "hitFrame": "+2",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
                 "command": "SS+2",
                 "hitLevel": "m",
                 "damage": "27",
@@ -4103,17 +4092,6 @@
                 "startUpFrame": "15",
                 "blockFrame": "-13",
                 "hitFrame": "Launch (JG?)",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
-                "command": "NSS SS+1",
-                "hitLevel": "m",
-                "damage": "28",
-                "startUpFrame": "17(26~)",
-                "blockFrame": "-9",
-                "hitFrame": "+2",
                 "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Launcher"
