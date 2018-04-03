@@ -3,17 +3,6 @@
         "name": "eliza",
         "filteredMoves": [
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "in rage b+3+4",
                 "hitLevel": "m (TJ)",
                 "damage": "55",
@@ -560,6 +549,17 @@
                 "blockFrame": "-7",
                 "hitFrame": "+4",
                 "counterHitFrame": "+4",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
+                "command": "WS+2",
+                "hitLevel": "m",
+                "damage": "18",
+                "startUpFrame": "15~16a",
+                "blockFrame": "-12~-11",
+                "hitFrame": "SH",
+                "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Basic / Special Move"
             },
@@ -1226,17 +1226,6 @@
                 "type": "Launcher"
             },
             {
-                "command": "WS+2",
-                "hitLevel": "m",
-                "damage": "18",
-                "startUpFrame": "15~16a",
-                "blockFrame": "-12~-11",
-                "hitFrame": "SH",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
                 "command": "WS+3",
                 "hitLevel": "m (TJ)",
                 "damage": "20",
@@ -1288,17 +1277,6 @@
                 "blockFrame": "-7",
                 "hitFrame": "Launch",
                 "counterHitFrame": "Launch",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
-                "command": "WS+2",
-                "hitLevel": "m",
-                "damage": "18",
-                "startUpFrame": "15~16a",
-                "blockFrame": "-12~-11",
-                "hitFrame": "SH",
-                "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Launcher"
             },

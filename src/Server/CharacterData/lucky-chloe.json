@@ -3,17 +3,6 @@
         "name": "lucky-chloe",
         "filteredMoves": [
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "in rage 3+4",
                 "hitLevel": "l (TC)",
                 "damage": "50(or60or65)",
@@ -439,6 +428,17 @@
                 "blockFrame": "-1",
                 "hitFrame": "+3",
                 "counterHitFrame": "+12",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
+                "command": "b+1",
+                "hitLevel": "m?",
+                "damage": "27",
+                "startUpFrame": "17~19",
+                "blockFrame": "-13~-11",
+                "hitFrame": "KND",
+                "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Basic / Special Move"
             },
@@ -1092,6 +1092,17 @@
                 "type": "Basic / Special Move"
             },
             {
+                "command": "u+4",
+                "hitLevel": "m",
+                "damage": "15",
+                "startUpFrame": "15~16 js9~",
+                "blockFrame": "-13~-12",
+                "hitFrame": "KND",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
                 "command": "WS+4",
                 "hitLevel": "m",
                 "damage": "24",
@@ -1270,17 +1281,6 @@
                 "type": "Launcher"
             },
             {
-                "command": "b+1",
-                "hitLevel": "m?",
-                "damage": "27",
-                "startUpFrame": "17~19",
-                "blockFrame": "-13~-11",
-                "hitFrame": "KND",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
                 "command": "u/f+3(u+3 or u/b+3)",
                 "hitLevel": "m (TJ), ?",
                 "damage": "18(15,12)",
@@ -1336,34 +1336,12 @@
                 "type": "Launcher"
             },
             {
-                "command": "b+1",
-                "hitLevel": "m?",
-                "damage": "27",
-                "startUpFrame": "17~19",
-                "blockFrame": "-13~-11",
-                "hitFrame": "KND",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
                 "command": "u/f+3(u+3 or u/b+3)",
                 "hitLevel": "m (TJ), ?",
                 "damage": "18(15,12)",
                 "startUpFrame": "15~16 js9~",
                 "blockFrame": "-17~-16",
                 "hitFrame": "Launch (JG?)",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
-                "command": "u+4",
-                "hitLevel": "m",
-                "damage": "15",
-                "startUpFrame": "15~16 js9~",
-                "blockFrame": "-13~-12",
-                "hitFrame": "KND",
                 "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Launcher"

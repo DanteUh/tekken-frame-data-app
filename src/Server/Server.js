@@ -7,7 +7,7 @@ const characterJson = require('./characterNames.json');
 
 const characterNames = characterJson.characterNames; 
 
-for(let x = 0; x <= characterNames.length; x++ ) {
+for(let x = 0; x < characterNames.length; x++ ) {
 
   const url = `http://rbnorway.org/${characterNames[x]}-t7-frames/`;
 
@@ -20,6 +20,7 @@ for(let x = 0; x <= characterNames.length; x++ ) {
       const moves = [];
       const launchers = [];
       const throws = [];
+      const notUsed = [];
 
       $('tr').each(function(i, el) {
         var moveObj = {}
@@ -50,10 +51,12 @@ for(let x = 0; x <= characterNames.length; x++ ) {
               moveObj.notes = $(td).text();
           }
         });
-        if (moveObj.hitFrame.includes('Launch') || moveObj.counterHitFrame.includes('Launch')) {
+        if (moveObj.command.includes('Command') && moveObj.hitLevel.includes('Hit level')) {
+          notUsed.push(moveObj);
+        } else if (moveObj.hitFrame.includes('Launch')) {
           moveObj.type = 'Launcher';
           launchers.push(moveObj);
-        } else if (moveObj.hitFrame.includes('Throw') || moveObj.counterHitFrame.includes('Throw')) {
+        } else if (moveObj.hitFrame.includes('Throw')) {
           moveObj.type = 'Throw';
           throws.push(moveObj);
         } else {

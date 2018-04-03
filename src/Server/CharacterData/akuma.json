@@ -3,17 +3,6 @@
         "name": "akuma",
         "filteredMoves": [
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "1 or f+1",
                 "hitLevel": "h",
                 "damage": "7",
@@ -850,6 +839,17 @@
                 "type": "Basic / Special Move"
             },
             {
+                "command": "f, d, d/f+1+2 (On counter)",
+                "hitLevel": "Sm, (throw)",
+                "damage": "7,8,9,9,9",
+                "startUpFrame": "11,,,",
+                "blockFrame": "",
+                "hitFrame": "",
+                "counterHitFrame": "Throw(Launch)",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
                 "command": "qcb+3+4",
                 "hitLevel": "Sm x 4",
                 "damage": "6,6,6,20",
@@ -1629,17 +1629,6 @@
                 "blockFrame": "-34",
                 "hitFrame": "Launch (JG?)",
                 "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
-                "command": "f, d, d/f+1+2 (On counter)",
-                "hitLevel": "Sm, (throw)",
-                "damage": "7,8,9,9,9",
-                "startUpFrame": "11,,,",
-                "blockFrame": "",
-                "hitFrame": "",
-                "counterHitFrame": "Throw(Launch)",
                 "notes": "",
                 "type": "Launcher"
             },

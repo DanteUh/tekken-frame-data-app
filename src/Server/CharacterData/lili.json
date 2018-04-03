@@ -3,17 +3,6 @@
         "name": "lili",
         "filteredMoves": [
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "in rage 3+4",
                 "hitLevel": "m (TJ)",
                 "damage": "55",
@@ -1367,6 +1356,17 @@
                 "type": "Basic / Special Move"
             },
             {
+                "command": "u+4",
+                "hitLevel": "m (TJ)",
+                "damage": "15",
+                "startUpFrame": "15~17 js9~",
+                "blockFrame": "-13~-11",
+                "hitFrame": "KND",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
                 "command": "FC+d/b or d+1",
                 "hitLevel": "Sm (TC)",
                 "damage": "5",
@@ -1617,17 +1617,6 @@
                 "startUpFrame": "15~17 js9~",
                 "blockFrame": "-13~-11",
                 "hitFrame": "Launch (JG?)",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
-                "command": "u+4",
-                "hitLevel": "m (TJ)",
-                "damage": "15",
-                "startUpFrame": "15~17 js9~",
-                "blockFrame": "-13~-11",
-                "hitFrame": "KND",
                 "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Launcher"

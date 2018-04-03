@@ -3,17 +3,6 @@
         "name": "gigas",
         "filteredMoves": [
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "in rage 1+2",
                 "hitLevel": "m (TJ)",
                 "damage": "55",
@@ -274,6 +263,28 @@
                 "blockFrame": "+18",
                 "hitFrame": "KND",
                 "counterHitFrame": "KND",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
+                "command": "f+1+2",
+                "hitLevel": "h",
+                "damage": "15",
+                "startUpFrame": "13",
+                "blockFrame": "-10",
+                "hitFrame": "+5s",
+                "counterHitFrame": "Throw (0orD)",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
+                "command": "f+1+2(CH in front)",
+                "hitLevel": "h, (throw)",
+                "damage": "18,10*4",
+                "startUpFrame": "13",
+                "blockFrame": "",
+                "hitFrame": "",
+                "counterHitFrame": "Throw (0orD)",
                 "notes": "",
                 "type": "Basic / Special Move"
             },
@@ -593,6 +604,17 @@
                 "blockFrame": "-10~-8",
                 "hitFrame": "+3~+5",
                 "counterHitFrame": "+3~+5",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
+                "command": "u/f+3",
+                "hitLevel": "m (TJ)",
+                "damage": "17",
+                "startUpFrame": "20~22 js9~",
+                "blockFrame": "-3~-1",
+                "hitFrame": "+3~+5",
+                "counterHitFrame": "Launch (JG?)",
                 "notes": "",
                 "type": "Basic / Special Move"
             },
@@ -1004,6 +1026,17 @@
                 "type": "Basic / Special Move"
             },
             {
+                "command": "u+4",
+                "hitLevel": "m (TJ)",
+                "damage": "20",
+                "startUpFrame": "25~26 js9~",
+                "blockFrame": "-13~-12",
+                "hitFrame": "KND",
+                "counterHitFrame": "Launch (JG?)",
+                "notes": "",
+                "type": "Basic / Special Move"
+            },
+            {
                 "command": "FC+1",
                 "hitLevel": "Sm (TC)",
                 "damage": "5",
@@ -1149,17 +1182,6 @@
                 "type": "Launcher"
             },
             {
-                "command": "u/f+3",
-                "hitLevel": "m (TJ)",
-                "damage": "17",
-                "startUpFrame": "20~22 js9~",
-                "blockFrame": "-3~-1",
-                "hitFrame": "+3~+5",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
                 "command": "u/f+4",
                 "hitLevel": "m (TJ)",
                 "damage": "20",
@@ -1226,28 +1248,6 @@
                 "type": "Launcher"
             },
             {
-                "command": "u/f+3",
-                "hitLevel": "m (TJ)",
-                "damage": "17",
-                "startUpFrame": "20~22 js9~",
-                "blockFrame": "-3~-1",
-                "hitFrame": "+3~+5",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
-                "command": "u+4",
-                "hitLevel": "m (TJ)",
-                "damage": "20",
-                "startUpFrame": "25~26 js9~",
-                "blockFrame": "-13~-12",
-                "hitFrame": "KND",
-                "counterHitFrame": "Launch (JG?)",
-                "notes": "",
-                "type": "Launcher"
-            },
-            {
                 "command": "u/f+4",
                 "hitLevel": "m (TJ)",
                 "damage": "20",
@@ -1281,29 +1281,6 @@
                 "type": "Launcher"
             }
         ],
-        "throws": [
-            {
-                "command": "f+1+2",
-                "hitLevel": "h",
-                "damage": "15",
-                "startUpFrame": "13",
-                "blockFrame": "-10",
-                "hitFrame": "+5s",
-                "counterHitFrame": "Throw (0orD)",
-                "notes": "",
-                "type": "Throw"
-            },
-            {
-                "command": "f+1+2(CH in front)",
-                "hitLevel": "h, (throw)",
-                "damage": "18,10*4",
-                "startUpFrame": "13",
-                "blockFrame": "",
-                "hitFrame": "",
-                "counterHitFrame": "Throw (0orD)",
-                "notes": "",
-                "type": "Throw"
-            }
-        ]
+        "throws": []
     }
 }

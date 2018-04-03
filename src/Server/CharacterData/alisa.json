@@ -3,17 +3,6 @@
         "name": "alisa",
         "filteredMoves": [
             {
-                "command": "Command",
-                "hitLevel": "Hit level",
-                "damage": "Damage",
-                "startUpFrame": "Start up frame",
-                "blockFrame": "Block frame",
-                "hitFrame": "Hit frame",
-                "counterHitFrame": "Counter hit frame",
-                "notes": "Notes",
-                "type": "Basic / Special Move"
-            },
-            {
                 "command": "in rage b+1+2 in rage WS+b+1+2 in rage DES b+1+2",
                 "hitLevel": "h x 6, (DES)",
                 "damage": "55",
