@@ -1,11 +1,16 @@
 /* eslint-disable */
-
 const cheerio = require('cheerio');
 const request = require('request');
 const fs = require('fs');
-const characterJson = require('./characterNames.json');
+const charactersJson = require('./characterNames.json');
 
-const characterNames = characterJson.characterNames; 
+const characterNames = charactersJson.characterNames;
+
+const removeObjectDuplicates = (filterArr, prop) => {
+  return filterArr.filter((obj, index, arr) => {
+    return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === index;
+  })
+}
 
 for(let x = 0; x < characterNames.length; x++ ) {
 
@@ -17,72 +22,56 @@ for(let x = 0; x < characterNames.length; x++ ) {
     if(!error){
       const $ = cheerio.load(html);
 
-      const moves = [];
-      const launchers = [];
-      const throws = [];
-      const notUsed = [];
+      let unfilteredMoves = [];
+      // let unfilteredLaunchers = [];
+      // let throws = [];
+      let notUsed = [];
 
       $('tr').each(function(i, el) {
         var moveObj = {}
         $(el).find('td').each(function(i, td) {
           switch(i) {
             case 0:
-              moveObj.command = $(td).text();
+              moveObj.command = $(td).text().trim();
               break;
             case 1:
-              moveObj.hitLevel = $(td).text();
+              moveObj.hitLevel = $(td).text().trim();
               break;
             case 2:
-              moveObj.damage = $(td).text();
+              moveObj.damage = $(td).text().trim();
               break;
             case 3:
-              moveObj.startUpFrame = $(td).text();
+              moveObj.startUpFrame = $(td).text().trim();
               break;
             case 4:
-              moveObj.blockFrame = $(td).text();
+              moveObj.blockFrame = $(td).text().trim();
               break;
             case 5:
-              moveObj.hitFrame = $(td).text();
+              moveObj.hitFrame = $(td).text().trim();
               break;
             case 6:
-              moveObj.counterHitFrame = $(td).text();
+              moveObj.counterHitFrame = $(td).text().trim();
               break;
             case 7:
-              moveObj.notes = $(td).text();
+              moveObj.notes = $(td).text().trim();
           }
         });
+
         if (moveObj.command.includes('Command') && moveObj.hitLevel.includes('Hit level')) {
-          notUsed.push(moveObj);
-        } else if (moveObj.hitFrame.includes('Launch')) {
-          moveObj.type = 'Launcher';
-          launchers.push(moveObj);
-        } else if (moveObj.hitFrame.includes('Throw')) {
-          moveObj.type = 'Throw';
-          throws.push(moveObj);
+          notUsed.push(moveObj)
         } else {
-          moveObj.type = 'Basic / Special Move';
-          moves.push(moveObj);
+          unfilteredMoves.push(moveObj);
         }
       });
 
-      const removeDuplicates = (arr) => {
-        const hashTable = {};
-
-        return arr.filter(function (el) {
-          const key = JSON.stringify(el);
-          let match = Boolean(hashTable[key]);
-
-          return (match ? false : hashTable[key] = true);
-        });
-      }
-
-      const filteredMoves = removeDuplicates(moves);
-
+      const moves = removeObjectDuplicates(unfilteredMoves, "command");
+      // const launchers = removeObjectDuplicates(unfilteredLaunchers, "command");
+      
       const character = {
         name: currentCharacter,
-        filteredMoves,
-        launchers,
-        throws,
+        moves,
+        // launchers,
+        // throws,
       };
 
       const json = { character };

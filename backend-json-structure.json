@@ -1,0 +1,33 @@
+{
+  "characters": [
+    {
+      "name": "Akuma",
+      "moves": [
+        {
+          "command": "1 or f+1",
+          "hitLevel": "h",
+          "damage": "7",
+          "startUpFrame": "10",
+          "blockFrame": "+1",
+          "hitFrame": "+8",
+          "counterHitFrame": "+8",
+          "notes": "",
+          "type": "Basic / Special Move"
+        }
+      ],
+      "launchers": [
+        {
+          "command": "d/f+2, 1",
+          "hitLevel": "m, m",
+          "damage": "10,10",
+          "startUpFrame": "16~17",
+          "blockFrame": "-18~-17",
+          "hitFrame": "Launch (JG?)",
+          "counterHitFrame": "Launch (JG?)",
+          "notes": "",
+          "type": "Launcher"
+        }
+      ]
+    }
+  ]
+}

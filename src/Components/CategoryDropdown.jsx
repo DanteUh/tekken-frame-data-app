@@ -15,10 +15,9 @@ export default class CategoryDropdown extends Component {
   render() {
     return (
       <div className="category-container mb-4">
-        {this.props.characterData[0] !== undefined &&
         <div>
           <button className="category-dropdown btn-custom dropdown-custom d-flex justify-content-between align-items-center" onClick={this.toggleClick}>
-            {`${this.props.characterData[0].type}s`}
+            Moves
             {this.state.collapse ?
               <i className="fa fa-angle-up" aria-hidden="true"></i> :
               <i className="fa fa-angle-down" aria-hidden="true"></i>
@@ -28,7 +27,6 @@ export default class CategoryDropdown extends Component {
             <DataTable characterData={this.props.characterData} />
           </Collapse>
         </div>
-        }
       </div>
     );
   }
