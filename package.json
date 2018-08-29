@@ -24,7 +24,7 @@
   "scripts": {
     "start": "npm-run-all -p watch-css start-js",
     "start-js": "react-scripts start",
-    "server": "nodemon Server/server.js",
+    "server": "nodemon src/Server/server.js",
     "watch-css": "node-sass-chokidar src/ -o src/ --watch",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
