@@ -2,11 +2,22 @@
 const cheerio = require('cheerio');
 const request = require('request');
 const fs = require('fs');
+const utils = require('./utils/postRequest')
 const charactersJson = require('./characterNames.json');
 
 const characterNames = charactersJson.characterNames;
 
-const removeObjectDuplicates = (filterArr, prop) => {
+const rp = require('request-promise');
+
+rp('http://rbnorway.org/hwoarang-t7-frames/')
+  .then(htmlString => {
+    console.log(htmlString);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+
+/* const removeObjectDuplicates = (filterArr, prop) => {
   return filterArr.filter((obj, index, arr) => {
     return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === index;
   })
@@ -81,4 +92,4 @@ for(let x = 0; x < characterNames.length; x++ ) {
       });
     }
   });
-}
+} */
