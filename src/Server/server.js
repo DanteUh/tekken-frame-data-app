@@ -1,21 +1,28 @@
+/* eslint-disable */
+const dbConfig = require('./config/database.config.js');
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(
-  'mongodb://localhost/tekken-frame-data-app',
-  { useNewUrlParser: true },
-);
+mongoose.connect(dbConfig.url, {
+    useNewUrlParser: true
+  }).then(() => {
+    console.log('Successfully connected to the database');
+  }).catch(err => {
+    console.log('Could not connect to the database. Exiting now...', err);
+    process.exit();
+});
 
 // Express app setup
 const app = express();
 const port = process.env.Port || 8080;
-app.use(bodyParser.json());
-app.use(cors());
 
-app.listen(port);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.use(cors());
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -25,4 +32,6 @@ app.use((req, res, next) => {
 
 module.exports = app;
 
-console.log(`Restful API started on port: ${port}`);
+app.listen(port, () => {
+  console.log(`Restful API started on port: ${port}`);
+});

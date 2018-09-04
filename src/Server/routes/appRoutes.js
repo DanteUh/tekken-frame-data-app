@@ -7,5 +7,5 @@ module.exports = (app) => {
     .post(character.add_character);
   
   app.route('/characters/:characterName')
-  .put(character.update_character);
+    .put(character.update_character);
 };

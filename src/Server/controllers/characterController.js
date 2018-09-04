@@ -15,7 +15,7 @@ exports.add_character = (req, res) => {
   new_character.save(
     {new: true},
     (err, character) => {
-      err ? res.send(err) : res.json(consultant)
+      err ? res.send(err) : res.json(character)
     }
   );
 };
