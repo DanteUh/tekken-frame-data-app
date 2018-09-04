@@ -1,3 +1,3 @@
 module.exports = {
-  url: 'mongodb://localhost:27017/tekken-frame-data-app',
+  url: 'mongodb://localhost/tekken-frame-data-app',
 };

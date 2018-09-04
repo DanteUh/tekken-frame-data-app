@@ -1,9 +1,15 @@
 /* eslint-disable */
-const dbConfig = require('./config/database.config.js');
+
+/* Packages imports */
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+
+/* Project files import */
+const dbConfig = require('./config/database.config.js');
+const Character = require('./models/characterModel');
+const routes = require('./routes/appRoutes');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.url, {
@@ -18,11 +24,15 @@ mongoose.connect(dbConfig.url, {
 // Express app setup
 const app = express();
 const port = process.env.Port || 8080;
-
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
+
+routes(app);
+
+app.listen(port, () => {
+  console.log(`Restful API started on port: ${port}`);
+});
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -31,7 +41,3 @@ app.use((req, res, next) => {
 });
 
 module.exports = app;
-
-app.listen(port, () => {
-  console.log(`Restful API started on port: ${port}`);
-});
