@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // Components
 import CategoryDropdown from './Components/CategoryDropdown';
 import CharacterMenu from './Components/CharacterMenu';
+import DataTable from './Components/DataTable';
 
 export default class App extends Component {
   state = {
@@ -17,8 +18,6 @@ export default class App extends Component {
     const characterData = require(`./Server/CharacterData/${this.state.selectedCharacter}`);
     return [
       characterData.character.filteredMoves,
-      characterData.character.launchers,
-      characterData.character.throws,
     ];
   };
 
@@ -57,15 +56,15 @@ export default class App extends Component {
     });
     return (
       <div className="app-body">
-        <div className="app-container p-4">
+        <div className="app-container pr-4 pl-4 pt-2 pb-2">
           {/* .fixed-top-bar */}
           <div className="navbar">
           {/* character-header-fixed */}
-            <div className="character-header mb-2">
+            <div className="character-header mb-1">
               <h1 className="character-heading">
                 { displayName }
               </h1>
-              <div className="character-nav mt-2">
+              <div className="character-nav mt-1">
                 <CharacterMenu
                   handleChange={this.handleChange}
                   selectedCharacter={this.state.selectedCharacter}
@@ -76,8 +75,10 @@ export default class App extends Component {
             </div>
           </div>
           <div className="horizontal-line" />
-          <div className="data-container text-white mt-3 mb-3">
-            {categoryDropdown}
+          <div className="data-container text-white mt-3">
+            <div class="category-container mb-1">
+              <DataTable characterData={this.characterData} />
+            </div>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export default class CategoryDropdown extends Component {
 
   render() {
     return (
-      <div className="category-container mb-4">
+      {/* <div className="category-container mb-4">
         <div>
           <button className="category-dropdown btn-custom dropdown-custom d-flex justify-content-between align-items-center" onClick={this.toggleClick}>
             Moves
@@ -27,7 +27,7 @@ export default class CategoryDropdown extends Component {
             <DataTable characterData={this.props.characterData} />
           </Collapse>
         </div>
-      </div>
+      </div> */}
     );
   }
 }
