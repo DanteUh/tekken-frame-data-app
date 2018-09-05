@@ -1,41 +1,22 @@
 /* eslint-disable */
 const cheerio = require('cheerio');
 const request = require('request');
-const fs = require('fs');
-const utils = require('./utils/postRequest')
-const charactersJson = require('./characterNames.json');
+const requestPromise = require('request-promise');
 
+const utilsPost = require('./utils/postRequest');
+const utilsDuplicates = require('./utils/duplicateFilter');
+const charactersJson = require('./characterNames.json');
 const characterNames = charactersJson.characterNames;
 
-const rp = require('request-promise');
-
-rp('http://rbnorway.org/hwoarang-t7-frames/')
-  .then(htmlString => {
-    console.log(htmlString);
-  })
-  .catch(err => {
-    console.log(err);
-  });
-
-/* const removeObjectDuplicates = (filterArr, prop) => {
-  return filterArr.filter((obj, index, arr) => {
-    return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === index;
-  })
-}
-
 for(let x = 0; x < characterNames.length; x++ ) {
-
   const url = `http://rbnorway.org/${characterNames[x]}-t7-frames/`;
-
   let currentCharacter = characterNames[x];
-  
-  request(url, (error, res, html) => {
-    if(!error){
+
+  requestPromise(url)
+    .then(html => {
       const $ = cheerio.load(html);
 
       let unfilteredMoves = [];
-      // let unfilteredLaunchers = [];
-      // let throws = [];
       let notUsed = [];
 
       $('tr').each(function(i, el) {
@@ -75,21 +56,23 @@ for(let x = 0; x < characterNames.length; x++ ) {
         }
       });
 
-      const moves = removeObjectDuplicates(unfilteredMoves, "command");
-      // const launchers = removeObjectDuplicates(unfilteredLaunchers, "command");
+      const moves = utilsDuplicates.removeObjectDuplicates(unfilteredMoves, "command");
       
       const character = {
         name: currentCharacter,
         moves,
-        // launchers,
-        // throws,
       };
 
-      const json = { character };
+      return character;
 
-      fs.writeFile(`${characterNames[x]}.json`, JSON.stringify(json, null, 4), err => {
+      /* fs.writeFile(`${characterNames[x]}.json`, JSON.stringify(json, null, 4), err => {
         console.log(`File successfully written! - Check the Server directory for the ${characterNames[x]}.json file`);
-      });
-    }
-  });
-} */
+      }); */
+    })
+    .then(data => {
+      utilsPost.postRequest('http://localhost:8080/characters', data);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+}
