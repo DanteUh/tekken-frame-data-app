@@ -1,5 +1,4 @@
 # Tekken 7 Frame Data App
----
 
 ## About
 Welcome to a fan made Tekken 7 frame data application.
