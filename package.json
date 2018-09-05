@@ -19,12 +19,13 @@
     "react-scripts": "^1.1.5",
     "react-table": "^6.7.6",
     "reactstrap": "^5.0.0-beta",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   },
   "scripts": {
     "start": "npm-run-all -p watch-css start-js",
     "start-js": "react-scripts start",
-    "server": "nodemon Server/server.js",
+    "server": "nodemon src/Server/server.js",
     "watch-css": "node-sass-chokidar src/ -o src/ --watch",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
