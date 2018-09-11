@@ -41,7 +41,7 @@ const DataTable = props => (
           accessor: 'notes',
         },
       ]}
-      data={props.characterData}
+      data={props.selectedCharacterData}
       defaultPageSize={20}
       className="-striped -highlight"
     />

@@ -1,25 +1,46 @@
 import React, { Component } from 'react';
 
 // Components
-import CategoryDropdown from './Components/CategoryDropdown';
 import CharacterMenu from './Components/CharacterMenu';
 import DataTable from './Components/DataTable';
 
 export default class App extends Component {
   state = {
+    characterData: [],
     selectedCharacter: 'akuma',
+    selectedCharacterData: [],
   }
 
   componentDidMount() {
-    this.updateSelectedData();
+    this.getCharacters();
   }
 
-  fetchCharacterData = () => {
-    const characterData = require(`./Server/CharacterData/${this.state.selectedCharacter}`);
-    return [
-      characterData.character.filteredMoves,
-    ];
+  getCharacters = () => {
+    fetch('http://localhost:8080/characters')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      this.setState({ characterData: data });
+      this.filterCharacterData();
+    })
+    .catch(err => {
+      console.log('Error', err)
+    });
   };
+
+  filterCharacterData = () => {
+    const filteredData = this.state.characterData.map(characterObj => {
+      return characterObj;
+    }).filter(character => {
+      return character.name === this.state.selectedCharacter;
+    }).map(data => {
+      return data.moves;
+    });
+    filteredData.forEach(element => {
+      this.setState({ selectedCharacterData: element });
+    })
+  }
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
@@ -44,16 +65,7 @@ export default class App extends Component {
 
   render() {
     const displayName = this.stringToUppercaseWithSpace(this.state.selectedCharacter);
-    const characterData = this.fetchCharacterData();
 
-    const categoryDropdown = characterData.map((data, i) => {
-      return (
-        <CategoryDropdown
-          key={i}
-          characterData={data}
-          selectedCharacter={this.state.selectedCharacter}/>
-      );
-    });
     return (
       <div className="app-body">
         <div className="app-container pr-4 pl-4 pt-2 pb-2">
@@ -76,8 +88,8 @@ export default class App extends Component {
           </div>
           <div className="horizontal-line" />
           <div className="data-container text-white mt-3">
-            <div class="category-container mb-1">
-              <DataTable characterData={this.characterData} />
+            <div className="category-container mb-1">
+              <DataTable selectedCharacterData={this.state.selectedCharacterData} />
             </div>
           </div>
         </div>

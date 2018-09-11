@@ -10,7 +10,7 @@ const CharacterList = props => (
     className="menu-item d-flex align-items-center"
   >
     <img
-      src={props.characterThumbnail} 
+      src={props.characterThumbnail}
       alt="character-thumbnail"
       className="character-thumbnail mr-3"
     />
