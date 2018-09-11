@@ -7,8 +7,8 @@ import DataTable from './Components/DataTable';
 export default class App extends Component {
   state = {
     characterData: [],
-    selectedCharacter: 'akuma',
     selectedCharacterData: [],
+    selectedCharacter: 'akuma',
   }
 
   componentDidMount() {
@@ -22,15 +22,15 @@ export default class App extends Component {
     })
     .then(data => {
       this.setState({ characterData: data });
-      this.filterCharacterData();
+      this.filterCharacterData(data);
     })
     .catch(err => {
       console.log('Error', err)
     });
   };
 
-  filterCharacterData = () => {
-    const filteredData = this.state.characterData.map(characterObj => {
+  filterCharacterData = (dataArray) => {
+    const filteredData = dataArray.map(characterObj => {
       return characterObj;
     }).filter(character => {
       return character.name === this.state.selectedCharacter;
@@ -39,17 +39,13 @@ export default class App extends Component {
     });
     filteredData.forEach(element => {
       this.setState({ selectedCharacterData: element });
-    })
-  }
-
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+    });
   };
 
-  updateSelectedData = () => {
-    this.setSelectedCharacterDisplayName();
-    this.fetchCharacterData();
-  }
+  handleChange = async (e) => {
+    await this.setState({ [e.target.name]: e.target.value });
+    this.filterCharacterData(this.state.characterData);
+  };
 
   stringToUppercaseWithSpace = (string) => {
     return string.replace("-", " ")
@@ -59,13 +55,12 @@ export default class App extends Component {
   }
 
   setSelectedCharacterDisplayName = () => {
-    const displayName = this.stringToUppercaseWithSpace(this.state.selectedCharacter);
-    this.setState({ displayName });
+    return this.stringToUppercaseWithSpace(this.state.selectedCharacter);
   }
 
   render() {
     const displayName = this.stringToUppercaseWithSpace(this.state.selectedCharacter);
-
+    console.log(this.state.selectedCharacterData);
     return (
       <div className="app-body">
         <div className="app-container pr-4 pl-4 pt-2 pb-2">
