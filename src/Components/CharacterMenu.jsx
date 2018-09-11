@@ -8,30 +8,30 @@ export default class CharacterMenu extends Component {
     dropdownOpen: false,
     characterThumbnails: [],
     displayNames: [],
-  }
+  };
 
   componentDidMount() {
     this.importImages();
     this.characterNamesToDisplayName();
-  }
+  };
 
   importImages = () => {
     const images = characters.characterNames.map(name => {
       return require(`../images/character-thumbnails/${name}.png`);
     });
     this.setState({ characterThumbnails: images });
-  }
+  };
 
   characterNamesToDisplayName = () => {
     const displayNames = characters.characterNames.map(name => {
       return this.props.stringToUppercaseWithSpace(name);
     });
     this.setState({ displayNames });
-  }
+  };
 
   toggle = () => {
     this.setState({ dropdownOpen: !this.state.dropdownOpen })
-  }
+  };
 
   render() {
     const selectedThumbnail = require(`../images/character-thumbnails/${this.props.selectedCharacter}.png`);
@@ -43,7 +43,8 @@ export default class CharacterMenu extends Component {
           characterName={char}
           handleChange={this.props.handleChange}
           characterThumbnail={this.state.characterThumbnails[i]}
-          characterNameValue={characters.characterNames[i]} />
+          characterNameValue={characters.characterNames[i]}
+        />
       );
     });
     return (
@@ -69,5 +70,5 @@ export default class CharacterMenu extends Component {
         </DropdownMenu>
       </Dropdown>
     );
-  }
-}
+  };
+};

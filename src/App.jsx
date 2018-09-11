@@ -9,11 +9,12 @@ export default class App extends Component {
     characterData: [],
     selectedCharacterData: [],
     selectedCharacter: 'akuma',
-  }
+    displayName: 'Akuma',
+  };
 
-  componentDidMount() {
+  async componentDidMount() {
     this.getCharacters();
-  }
+  };
 
   getCharacters = () => {
     fetch('http://localhost:8080/characters')
@@ -25,7 +26,7 @@ export default class App extends Component {
       this.filterCharacterData(data);
     })
     .catch(err => {
-      console.log('Error', err)
+      console.log('Error', err);
     });
   };
 
@@ -44,6 +45,7 @@ export default class App extends Component {
 
   handleChange = async (e) => {
     await this.setState({ [e.target.name]: e.target.value });
+    this.setSelectedCharacterDisplayName();
     this.filterCharacterData(this.state.characterData);
   };
 
@@ -52,15 +54,14 @@ export default class App extends Component {
     .replace(/\w\S*/g, function(txt){
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
-  }
+  };
 
   setSelectedCharacterDisplayName = () => {
-    return this.stringToUppercaseWithSpace(this.state.selectedCharacter);
-  }
+    const displayName = this.stringToUppercaseWithSpace(this.state.selectedCharacter);
+    this.setState({ displayName });
+  };
 
   render() {
-    const displayName = this.stringToUppercaseWithSpace(this.state.selectedCharacter);
-    console.log(this.state.selectedCharacterData);
     return (
       <div className="app-body">
         <div className="app-container pr-4 pl-4 pt-2 pb-2">
@@ -69,14 +70,14 @@ export default class App extends Component {
           {/* character-header-fixed */}
             <div className="character-header mb-1">
               <h1 className="character-heading">
-                { displayName }
+                { this.state.displayName }
               </h1>
               <div className="character-nav mt-1">
                 <CharacterMenu
                   handleChange={this.handleChange}
                   selectedCharacter={this.state.selectedCharacter}
                   stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
-                  selectedDisplayName={displayName}
+                  selectedDisplayName={this.state.displayName}
                 />
               </div>
             </div>
@@ -90,5 +91,5 @@ export default class App extends Component {
         </div>
       </div>
     );
-  }
-}
+  };
+};

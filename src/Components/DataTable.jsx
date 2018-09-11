@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactTable from 'react-table';
 
 const DataTable = props => (
@@ -47,6 +48,10 @@ const DataTable = props => (
     />
   </div>
 );
+
+DataTable.propTypes = {
+  selectedCharacterData: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default DataTable;
 
