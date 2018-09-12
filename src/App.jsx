@@ -63,30 +63,25 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="app-body">
-        <div className="app-container pr-4 pl-4 pt-2 pb-2">
-          {/* .fixed-top-bar */}
-          <div className="navbar">
-          {/* character-header-fixed */}
-            <div className="character-header mb-1">
-              <h1 className="character-heading">
-                { this.state.displayName }
-              </h1>
-              <div className="character-nav mt-1">
-                <CharacterMenu
-                  handleChange={this.handleChange}
-                  selectedCharacter={this.state.selectedCharacter}
-                  stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
-                  selectedDisplayName={this.state.displayName}
-                />
-              </div>
+      <div className="app-body d-flex flex-column justify-content-center align-items-center">
+        <div className="app-container p-2">
+          <div className="character-header mb-1 mt-2 pb-1">
+            <h1 className="character-heading">
+              { this.state.displayName }
+            </h1>
+            <div className="character-nav mt-1">
+              <CharacterMenu
+                handleChange={this.handleChange}
+                selectedCharacter={this.state.selectedCharacter}
+                stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
+                selectedDisplayName={this.state.displayName}
+              />
             </div>
           </div>
-          <div className="horizontal-line" />
-          <div className="data-container text-white mt-3">
-            <div className="category-container mb-1">
-              <DataTable selectedCharacterData={this.state.selectedCharacterData} />
-            </div>
+          <div className="horizontal-line mb-2"></div>
+          <p>You can search, filter and sort in the data table. The columns are also resizable</p>
+          <div className="data-container text-white mt-1">
+            <DataTable selectedCharacterData={this.state.selectedCharacterData} />
           </div>
         </div>
       </div>

@@ -1,22 +1,35 @@
 .data-table {
+  background-color: $gray;
+  border-radius: $border-radius;
   background-color: $gray-opacity;
-  border-radius: 0 0 $border-radius $border-radius;
 }
 
 .ReactTable {
-  width: 100%;
   border: none;
+  & .rt-head {
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  & .rt-tr .rt-resizable-header {
+    border-right-color: $gray-light;
+  }
+  & .-pagination .-btn {
+    background-color: $gray-dark;
+    color: rgb(218, 218, 218);
+  }
+  & .rt-tr-group:hover {
+    background-color: $blue-light;
+  }
+}
+
+.ReactTable .rt-td {
+  display: flex;
+  justify-content: center;
+  &:first-child {
+    display: block;
+  }
 }
 
 .ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input, .ReactTable .-pagination select {
   padding: 3px 5px;
-}
-
-.ReactTable .-pagination .-btn {
-  background-color: $gray-dark;
-  color: rgb(218, 218, 218);
-}
-
-.-sort-asc, .-sort-desc {
-  border-color: $blue-light;
 }
