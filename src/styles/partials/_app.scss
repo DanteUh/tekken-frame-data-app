@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'fonts';
+@import 'media-queries';
 @import 'buttons';
-@import 'fixed-top-bar';
 @import 'character-menu';
 @import 'data-container';
 @import 'data-table';
@@ -10,61 +10,4 @@
 .app-body {
   font-size: 1em;
   background-color: $black-opacity;
-}
-
-// Media Queries
-@media screen and (min-width: 1670px) {
-  .app-container {
-    width: 75%;
-  }
-  .character-header-fixed {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 1670px) {
-  .app-container {
-    width: 75%;
-  }
-  .character-header-fixed {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .app-container {
-    width: 85%;
-  }
-  .character-header-fixed {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .app-container {
-    width: 95%;
-  }
-  .character-header-fixed {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .app-container {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .character-header {
-    display: block;
-    text-align: center;
-    .character-heading {
-      display: none;
-    }
-    .character-nav {
-      display: flex;
-      justify-content: center;
-    }
-  }
 }

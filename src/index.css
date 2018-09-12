@@ -13,6 +13,44 @@ h1 {
   height: 5px;
   border-bottom: solid #3b3b3b 1px; }
 
+@media screen and (min-width: 1670px) {
+  .app-container {
+    width: 75%; }
+  .character-header-fixed {
+    width: 75%; } }
+
+@media screen and (max-width: 1670px) {
+  .app-container {
+    width: 75%; }
+  .character-header-fixed {
+    width: 75%; } }
+
+@media screen and (max-width: 1500px) {
+  .app-container {
+    width: 85%; }
+  .character-header-fixed {
+    width: 85%; } }
+
+@media screen and (max-width: 1300px) {
+  .app-container {
+    width: 95%; }
+  .character-header-fixed {
+    width: 95%; } }
+
+@media screen and (max-width: 1200px) {
+  .app-container {
+    width: 100%; } }
+
+@media screen and (max-width: 450px) {
+  .character-header {
+    display: block;
+    text-align: center; }
+    .character-header .character-heading {
+      display: none; }
+    .character-header .character-nav {
+      display: flex;
+      justify-content: center; } }
+
 .btn-custom {
   font-weight: 300;
   padding: 10px;
@@ -21,12 +59,10 @@ h1 {
   color: white;
   background-color: #3b3b3b;
   transition: 0.3s ease-in-out; }
-
-.btn-custom:hover {
-  cursor: pointer; }
-
-.btn-custom:focus {
-  outline: 0; }
+  .btn-custom:hover {
+    cursor: pointer; }
+  .btn-custom:focus {
+    outline: 0; }
 
 .dropdown-custom {
   text-align: start;
@@ -36,28 +72,6 @@ h1 {
   color: white;
   border: none;
   transition: 0.3s ease-in-out; }
-
-.fixed-top-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #3b3b3b; }
-
-.character-header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
-
-.navbar {
-  width: 100%;
-  padding: 5px 0; }
 
 .character-menu, .menu-item {
   padding: 0 15px 0 0; }
@@ -97,8 +111,8 @@ h1 {
   font-size: 0.889em; }
 
 .data-table {
-  background-color: #3b3b3b;
   border-radius: 5px;
+  background-color: #3b3b3b;
   background-color: rgba(59, 59, 59, 0.8); }
 
 .ReactTable {
@@ -126,44 +140,6 @@ h1 {
 .app-body {
   font-size: 1em;
   background-color: rgba(26, 26, 26, 0.8); }
-
-@media screen and (min-width: 1670px) {
-  .app-container {
-    width: 75%; }
-  .character-header-fixed {
-    width: 75%; } }
-
-@media screen and (max-width: 1670px) {
-  .app-container {
-    width: 75%; }
-  .character-header-fixed {
-    width: 75%; } }
-
-@media screen and (max-width: 1500px) {
-  .app-container {
-    width: 85%; }
-  .character-header-fixed {
-    width: 85%; } }
-
-@media screen and (max-width: 1300px) {
-  .app-container {
-    width: 95%; }
-  .character-header-fixed {
-    width: 95%; } }
-
-@media screen and (max-width: 1200px) {
-  .app-container {
-    width: 100%; } }
-
-@media screen and (max-width: 450px) {
-  .character-header {
-    display: block;
-    text-align: center; }
-    .character-header .character-heading {
-      display: none; }
-    .character-header .character-nav {
-      display: flex;
-      justify-content: center; } }
 
 html, body, #root, .app-body {
   height: 100%;

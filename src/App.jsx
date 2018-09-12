@@ -65,7 +65,7 @@ export default class App extends Component {
     return (
       <div className="app-body d-flex flex-column justify-content-center align-items-center">
         <div className="app-container p-2">
-          <div className="character-header mb-1 mt-2 pb-1">
+          <div className="character-header d-flex flex-row justify-content-between align-items-end mb-1 mt-2 pb-1">
             <h1 className="character-heading">
               { this.state.displayName }
             </h1>

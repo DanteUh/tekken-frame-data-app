@@ -7,14 +7,12 @@
   color: white;
   background-color: $gray;
   transition: 0.3s ease-in-out;
-}
-
-.btn-custom:hover {
-  cursor: pointer;
-}
-
-.btn-custom:focus {
-  outline: 0;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: 0;
+  }
 }
 
 // Custom Dropdown Button
