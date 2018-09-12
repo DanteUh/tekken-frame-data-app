@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactTable from 'react-table';
 
 const DataTable = props => (
@@ -41,12 +42,16 @@ const DataTable = props => (
           accessor: 'notes',
         },
       ]}
-      data={props.characterData}
-      defaultPageSize={10}
+      data={props.selectedCharacterData}
+      defaultPageSize={20}
       className="-striped -highlight"
     />
   </div>
 );
+
+DataTable.propTypes = {
+  selectedCharacterData: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default DataTable;
 
