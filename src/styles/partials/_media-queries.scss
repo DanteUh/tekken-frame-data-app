@@ -1,0 +1,55 @@
+@media screen and (min-width: 1670px) {
+  .app-container {
+    width: 75%;
+  }
+  .character-header-fixed {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1670px) {
+  .app-container {
+    width: 75%;
+  }
+  .character-header-fixed {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .app-container {
+    width: 85%;
+  }
+  .character-header-fixed {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .app-container {
+    width: 95%;
+  }
+  .character-header-fixed {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .app-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .character-header {
+    display: block;
+    text-align: center;
+    .character-heading {
+      display: none;
+    }
+    .character-nav {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

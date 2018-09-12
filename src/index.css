@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400");
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
@@ -11,8 +10,46 @@ h1 {
 
 .horizontal-line {
   width: 100%;
-  height: 10px;
+  height: 5px;
   border-bottom: solid #3b3b3b 1px; }
+
+@media screen and (min-width: 1670px) {
+  .app-container {
+    width: 75%; }
+  .character-header-fixed {
+    width: 75%; } }
+
+@media screen and (max-width: 1670px) {
+  .app-container {
+    width: 75%; }
+  .character-header-fixed {
+    width: 75%; } }
+
+@media screen and (max-width: 1500px) {
+  .app-container {
+    width: 85%; }
+  .character-header-fixed {
+    width: 85%; } }
+
+@media screen and (max-width: 1300px) {
+  .app-container {
+    width: 95%; }
+  .character-header-fixed {
+    width: 95%; } }
+
+@media screen and (max-width: 1200px) {
+  .app-container {
+    width: 100%; } }
+
+@media screen and (max-width: 450px) {
+  .character-header {
+    display: block;
+    text-align: center; }
+    .character-header .character-heading {
+      display: none; }
+    .character-header .character-nav {
+      display: flex;
+      justify-content: center; } }
 
 .btn-custom {
   font-weight: 300;
@@ -22,12 +59,10 @@ h1 {
   color: white;
   background-color: #3b3b3b;
   transition: 0.3s ease-in-out; }
-
-.btn-custom:hover {
-  cursor: pointer; }
-
-.btn-custom:focus {
-  outline: 0; }
+  .btn-custom:hover {
+    cursor: pointer; }
+  .btn-custom:focus {
+    outline: 0; }
 
 .dropdown-custom {
   text-align: start;
@@ -37,28 +72,6 @@ h1 {
   color: white;
   border: none;
   transition: 0.3s ease-in-out; }
-
-.fixed-top-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #3b3b3b; }
-
-.character-header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
-
-.navbar {
-  width: 100%;
-  padding: 5px 0; }
 
 .character-menu, .menu-item {
   padding: 0 15px 0 0; }
@@ -93,90 +106,45 @@ h1 {
 .character-thumbnail {
   width: 45px; }
 
-.category-container {
+.data-container {
   border-radius: 5px;
   font-size: 0.889em; }
 
-.category-dropdown {
-  width: 100%;
-  padding: 12px 15px;
-  border-radius: 5px 5px 0 0;
-  border-bottom: solid rgba(26, 26, 26, 0.8) 1px;
-  background-color: #32405e;
-  transition: 0.3s ease-in-out; }
-
-.category-dropdown:hover {
-  background-color: rgba(62, 124, 175, 0.9); }
-
 .data-table {
-  background-color: rgba(59, 59, 59, 0.8);
-  border-radius: 0 0 5px 5px; }
+  border-radius: 5px;
+  background-color: #3b3b3b;
+  background-color: rgba(59, 59, 59, 0.8); }
 
 .ReactTable {
-  width: 100%;
   border: none; }
+  .ReactTable .rt-head {
+    overflow-y: scroll;
+    overflow-x: scroll; }
+  .ReactTable .rt-tr .rt-resizable-header {
+    border-right-color: #7a7a7a; }
+  .ReactTable .-pagination .-btn {
+    background-color: #292929;
+    color: #dadada; }
+  .ReactTable .rt-tr-group:hover {
+    background-color: #3e7caf; }
+
+.ReactTable .rt-td {
+  display: flex;
+  justify-content: center; }
+  .ReactTable .rt-td:first-child {
+    display: block; }
 
 .ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input, .ReactTable .-pagination select {
   padding: 3px 5px; }
 
-.ReactTable .-pagination .-btn {
-  background-color: #292929;
-  color: #dadada; }
-
-.-sort-asc, .-sort-desc {
-  border-color: #3e7caf; }
-
 .app-body {
-  width: 100%;
-  height: 100%;
   font-size: 1em;
-  display: flex;
-  justify-content: space-evenly; }
-
-.app-container {
   background-color: rgba(26, 26, 26, 0.8); }
 
-@media screen and (min-width: 1670px) {
-  .app-container {
-    width: 60%; }
-  .character-header-fixed {
-    width: 60%; } }
-
-@media screen and (max-width: 1670px) {
-  .app-container {
-    width: 75%; }
-  .character-header-fixed {
-    width: 75%; } }
-
-@media screen and (max-width: 1500px) {
-  .app-container {
-    width: 85%; }
-  .character-header-fixed {
-    width: 85%; } }
-
-@media screen and (max-width: 1300px) {
-  .app-container {
-    width: 95%; }
-  .character-header-fixed {
-    width: 95%; } }
-
-@media screen and (max-width: 1200px) {
-  .app-container {
-    width: 100%; } }
-
-@media screen and (max-width: 450px) {
-  .app-container .character-header {
-    display: block;
-    text-align: center; }
-    .app-container .character-header .character-nav {
-      display: flex;
-      justify-content: center; } }
+html, body, #root, .app-body {
+  height: 100%;
+  width: 100%; }
 
 body {
-  background: url(images/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Open Sans', sans-serif;
-  color: white; }
+  color: white;
+  background-color: #3b3b3b; }

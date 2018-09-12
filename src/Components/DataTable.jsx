@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactTable from 'react-table';
 
 const DataTable = props => (
-  <div className="data-table p-3">
+  <div className="data-table p-2">
     <ReactTable
       filterable
       defaultFilterMethod={(filter, row) =>
@@ -12,6 +12,7 @@ const DataTable = props => (
         {
           Header: 'Command',
           accessor: 'command',
+          minWidth: 200,
         },
         {
           Header: 'Hit Level',
@@ -43,7 +44,10 @@ const DataTable = props => (
         },
       ]}
       data={props.selectedCharacterData}
-      defaultPageSize={20}
+      defaultPageSize={50}
+      style={{
+        height: '80vh',
+      }}
       className="-striped -highlight"
     />
   </div>

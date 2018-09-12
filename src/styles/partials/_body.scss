@@ -1,9 +1,9 @@
+html, body, #root, .app-body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  background: url(images/background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Open Sans', sans-serif;
   color: white;
+  background-color: $gray;
 }
