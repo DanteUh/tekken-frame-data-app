@@ -1,17 +1,11 @@
 @media screen and (min-width: 1670px) {
   .app-container {
-    width: 75%;
-  }
-  .character-header-fixed {
-    width: 75%;
+    width: 65%;
   }
 }
 
 @media screen and (max-width: 1670px) {
   .app-container {
-    width: 75%;
-  }
-  .character-header-fixed {
     width: 75%;
   }
 }
@@ -20,16 +14,10 @@
   .app-container {
     width: 85%;
   }
-  .character-header-fixed {
-    width: 85%;
-  }
 }
 
 @media screen and (max-width: 1300px) {
   .app-container {
-    width: 95%;
-  }
-  .character-header-fixed {
     width: 95%;
   }
 }
