@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 // Components
-import CharacterMenu from './Components/CharacterMenu';
-import DataTable from './Components/DataTable';
+import CharacterMenu from './CharacterMenu';
+import DataTable from './DataTable';
 
-export default class App extends Component {
+export default class Main extends Component {
   state = {
     characterData: [],
     selectedCharacterData: [],
@@ -63,8 +63,8 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="app-body d-flex flex-column justify-content-center align-items-center">
-        <div className="app-container p-2">
+      <div className="main-body d-flex flex-column justify-content-center align-items-center">
+        <div className="main-container p-2">
           <div className="character-header d-flex flex-row justify-content-between align-items-end mb-1 mt-2 pb-1">
             <h1 className="character-heading">
               { this.state.displayName }

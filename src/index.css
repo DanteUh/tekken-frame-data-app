@@ -14,23 +14,23 @@ h1 {
   border-bottom: solid #3b3b3b 1px; }
 
 @media screen and (min-width: 1670px) {
-  .app-container {
+  .main-container {
     width: 65%; } }
 
 @media screen and (max-width: 1670px) {
-  .app-container {
+  .main-container {
     width: 75%; } }
 
 @media screen and (max-width: 1500px) {
-  .app-container {
+  .main-container {
     width: 85%; } }
 
 @media screen and (max-width: 1300px) {
-  .app-container {
+  .main-container {
     width: 95%; } }
 
 @media screen and (max-width: 1200px) {
-  .app-container {
+  .main-container {
     width: 100%; } }
 
 @media screen and (max-width: 450px) {
@@ -129,11 +129,11 @@ h1 {
 .ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input, .ReactTable .-pagination select {
   padding: 3px 5px; }
 
-.app-body {
+.main-body {
   font-size: 1em;
   background-color: rgba(26, 26, 26, 0.8); }
 
-html, body, #root, .app-body {
+html, body, #root, .main-body {
   height: 100%;
   width: 100%; }
 
