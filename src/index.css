@@ -117,8 +117,11 @@ h1 {
   .ReactTable .-pagination .-btn {
     background-color: #292929;
     color: #dadada; }
-  .ReactTable .rt-tr-group:hover {
-    background-color: #3e7caf; }
+  .ReactTable .rt-tr-group {
+    border-radius: 5px;
+    margin-right: 5px; }
+    .ReactTable .rt-tr-group:hover {
+      background-color: #3e7caf; }
 
 .ReactTable .rt-td {
   display: flex;

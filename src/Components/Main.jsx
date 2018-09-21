@@ -65,7 +65,7 @@ export default class Main extends Component {
     return (
       <div className="main-body d-flex flex-column justify-content-center align-items-center">
         <div className="main-container p-2">
-          <div className="character-header d-flex flex-row justify-content-between align-items-end mb-1 mt-2 pb-1">
+          <div className="character-header d-flex flex-row justify-content-between align-items-end mb-1">
             <h1 className="character-heading">
               { this.state.displayName }
             </h1>
@@ -78,9 +78,9 @@ export default class Main extends Component {
               />
             </div>
           </div>
-          <div className="horizontal-line mb-2"></div>
+          <div className="horizontal-line mb-3"></div>
           <p>You can search, filter and sort in the data table. The columns are also resizable</p>
-          <div className="data-container text-white mt-1">
+          <div className="data-container text-white mt-3">
             <DataTable selectedCharacterData={this.state.selectedCharacterData} />
           </div>
         </div>

@@ -5,7 +5,7 @@ const requestPromise = require('request-promise');
 
 const utilsPost = require('./utils/postRequest');
 const utilsDuplicates = require('./utils/duplicateFilter');
-const charactersJson = require('./characterNames.json');
+const charactersJson = require('../shared/characterNames.json');
 const characterNames = charactersJson.characterNames;
 
 for(let x = 0; x < characterNames.length; x++ ) {
