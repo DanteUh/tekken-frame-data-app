@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu } from 'reactstrap';
-import characters from '../Server/characterNames';
+import characters from '../shared/characterNames';
 import CharacterList from './CharacterList';
 
 export default class CharacterMenu extends Component {

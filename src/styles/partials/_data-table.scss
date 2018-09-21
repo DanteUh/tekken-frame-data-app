@@ -17,8 +17,12 @@
     background-color: $gray-dark;
     color: rgb(218, 218, 218);
   }
-  & .rt-tr-group:hover {
-    background-color: $blue-light;
+  & .rt-tr-group {
+    border-radius: $border-radius;
+    margin-right: 5px;
+    &:hover {
+      background-color: $blue-light;
+    }
   }
 }
 

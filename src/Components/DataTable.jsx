@@ -46,7 +46,7 @@ const DataTable = props => (
       data={props.selectedCharacterData}
       defaultPageSize={50}
       style={{
-        height: '80vh',
+        height: '75vh',
       }}
       className="-striped -highlight"
     />
