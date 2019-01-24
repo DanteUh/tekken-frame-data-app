@@ -10,19 +10,31 @@ export default class Main extends Component {
     selectedCharacterData: [],
     selectedCharacter: 'akuma',
     displayName: 'Akuma',
+    isLoading: true,
   };
 
-  async componentDidMount() {
+  componentDidMount() {
     this.getCharacters();
   };
 
   getCharacters = () => {
     fetch('http://localhost:8080/characters')
     .then(res => {
-      return res.json();
+      if (res.status >= 200 && res.status <= 300) {
+        return res.json();
+      } else {
+        this.setState({
+          isLoading: false
+        })
+        return res.json().then(Promise.reject.bind(Promise));   
+      }
     })
     .then(data => {
-      this.setState({ characterData: data });
+      console.log(data);
+      this.setState({
+        characterData: data,
+        isLoading: false
+      });
       this.filterCharacterData(data);
     })
     .catch(err => {
@@ -62,26 +74,33 @@ export default class Main extends Component {
   };
 
   render() {
+    const {displayName, selectedCharacter, selectedCharacterData, isLoading} = this.state
+    const noDataMessage = `Sorry, no data for ${displayName}. Go, practice some electrics!`
+
     return (
       <div className="main-body d-flex flex-column justify-content-center align-items-center">
         <div className="main-container p-2">
           <div className="character-header d-flex flex-row justify-content-between align-items-end mb-1">
             <h1 className="character-heading">
-              { this.state.displayName }
+              { displayName }
             </h1>
             <div className="character-nav mt-1">
               <CharacterMenu
                 handleChange={this.handleChange}
-                selectedCharacter={this.state.selectedCharacter}
+                selectedCharacter={selectedCharacter}
                 stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
-                selectedDisplayName={this.state.displayName}
+                selectedDisplayName={displayName}
               />
             </div>
           </div>
           <div className="horizontal-line mb-3"></div>
           <p>You can search, filter and sort in the data table. The columns are also resizable</p>
           <div className="data-container text-white mt-3">
-            <DataTable selectedCharacterData={this.state.selectedCharacterData} />
+            <DataTable
+              selectedCharacterData={selectedCharacterData}
+              isLoading={isLoading}
+              noDataMessage={noDataMessage}
+            />
           </div>
         </div>
       </div>

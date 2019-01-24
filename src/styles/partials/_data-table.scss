@@ -24,6 +24,21 @@
       background-color: $blue-light;
     }
   }
+  & .-loading.-active {
+    background-color: $gray-dark;
+    color: white;
+
+    & .-loading-inner {
+      top: 45%;
+      font-size: 2em;
+      color: white;
+    }
+  }
+  & .rt-noData {
+    font-size: 1.1em;
+    color: white;
+    background: $blue;
+  }
 }
 
 .ReactTable .rt-td {
