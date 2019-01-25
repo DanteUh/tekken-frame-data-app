@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400");
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", monospace;
   font-weight: 300;
   margin: 0; }
 
@@ -122,6 +122,17 @@ h1 {
     margin-right: 5px; }
     .ReactTable .rt-tr-group:hover {
       background-color: #3e7caf; }
+  .ReactTable .-loading.-active {
+    background-color: #292929;
+    color: white; }
+    .ReactTable .-loading.-active .-loading-inner {
+      top: 45%;
+      font-size: 2em;
+      color: white; }
+  .ReactTable .rt-noData {
+    font-size: 1.1em;
+    color: white;
+    background: #2a6ab5; }
 
 .ReactTable .rt-td {
   display: flex;

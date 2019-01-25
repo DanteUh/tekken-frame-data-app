@@ -5,6 +5,11 @@ import ReactTable from 'react-table';
 const DataTable = props => (
   <div className="data-table p-2">
     <ReactTable
+      data={props.selectedCharacterData}
+      loading={props.isLoading}
+      loadingText="Loading..."
+      noDataText={props.noDataMessage}
+      defaultPageSize={50}
       filterable
       defaultFilterMethod={(filter, row) =>
         (row[filter.id]).includes(filter.value)}
@@ -43,8 +48,6 @@ const DataTable = props => (
           accessor: 'notes',
         },
       ]}
-      data={props.selectedCharacterData}
-      defaultPageSize={50}
       style={{
         height: '75vh',
       }}
@@ -55,7 +58,8 @@ const DataTable = props => (
 
 DataTable.propTypes = {
   selectedCharacterData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  noDataMessage: PropTypes.string.isRequired,
 };
 
 export default DataTable;
-
