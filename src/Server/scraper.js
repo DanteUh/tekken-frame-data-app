@@ -8,7 +8,7 @@ const utilsDuplicates = require('./utils/duplicateFilter');
 const charactersJson = require('../shared/characterNames.json');
 const characterNames = charactersJson.characterNames;
 
-for(let x = 0; x < characterNames.length; x++ ) {
+for ( let x = 0; x < characterNames.length; x++ ) {
   const url = `http://rbnorway.org/${characterNames[x]}-t7-frames/`;
   let currentCharacter = characterNames[x];
 
@@ -20,7 +20,8 @@ for(let x = 0; x < characterNames.length; x++ ) {
       let notUsed = [];
 
       $('tr').each(function(i, el) {
-        var moveObj = {}
+        let moveObj = {}
+
         $(el).find('td').each(function(i, td) {
           switch(i) {
             case 0:
@@ -49,12 +50,12 @@ for(let x = 0; x < characterNames.length; x++ ) {
           }
         });
 
-        if (moveObj.command.includes('Command') && moveObj.hitLevel.includes('Hit level')) {
+        if (moveObj.command === 'Command' && moveObj.hitLevel === 'Hit level') {
           notUsed.push(moveObj)
         } else {
           unfilteredMoves.push(moveObj);
         }
-      });
+      });      
 
       const moves = utilsDuplicates.removeObjectDuplicates(unfilteredMoves, "command");
       
@@ -69,8 +70,11 @@ for(let x = 0; x < characterNames.length; x++ ) {
         console.log(`File successfully written! - Check the Server directory for the ${characterNames[x]}.json file`);
       }); */
     })
-    .then(data => {
+    .then(data => {    
       utilsPost.postRequest('http://localhost:8080/characters', data);
+      //utilsPost.postRequest('http://localhost:8080/characters/name', {name: data.name});
+      //console.log({name: data.name});
+      
     })
     .catch(err => {
       console.log(err);

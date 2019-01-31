@@ -9,6 +9,7 @@ const cors = require('cors');
 /* Project files import */
 const dbConfig = require('./config/database.config.js');
 const Character = require('./models/characterModel');
+const CharacterName = require('./models/characterNameModel.js');
 const routes = require('./routes/appRoutes');
 
 mongoose.Promise = global.Promise;
