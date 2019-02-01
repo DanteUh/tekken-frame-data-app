@@ -11,8 +11,8 @@ exports.get_characters = (req, res) => {
 };
 
 exports.get_characters_name = (req, res) => {
-  CharacterName.find({}, (err, characters) => {
-    err ? res.send(err) : res.json(characters);
+  CharacterName.find({}, (err, characterNames) => {
+    err ? res.send(err) : res.json(characterNames);
   });
 };
 
