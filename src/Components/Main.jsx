@@ -10,7 +10,7 @@ export default class Main extends Component {
     selectedCharacterData: [],
     selectedCharacter: 'akuma',
     displayName: 'Akuma',
-    isLoading: true,
+    isLoading: false,
   };
 
   componentDidMount() {
@@ -18,28 +18,28 @@ export default class Main extends Component {
   };
 
   getCharacters = () => {
+    this.setState({ isLoading: true });
+
     fetch('http://localhost:8080/characters')
     .then(res => {
       if (res.status >= 200 && res.status <= 300) {
         return res.json();
+
       } else {
-        this.setState({
-          isLoading: false
-        })
-        return res.json().then(Promise.reject.bind(Promise));   
+        this.setState({ isLoading: false })
+
+        return res.json().then(Promise.reject.bind(Promise));
       }
     })
     .then(data => {
-      console.log(data);
       this.setState({
         characterData: data,
         isLoading: false
       });
+
       this.filterCharacterData(data);
-    })
-    .catch(err => {
-      console.log('Error', err);
-    });
+
+    }).catch(err => console.log('Error', err));
   };
 
   filterCharacterData = (dataArray) => {
@@ -74,7 +74,7 @@ export default class Main extends Component {
   };
 
   render() {
-    const {displayName, selectedCharacter, selectedCharacterData, isLoading} = this.state
+    const {displayName, characterNames, selectedCharacter, selectedCharacterData, isLoading} = this.state
     const noDataMessage = `Sorry, no data for ${displayName}. Go, practice some electrics!`
 
     return (
@@ -87,6 +87,7 @@ export default class Main extends Component {
             <div className="character-nav mt-1">
               <CharacterMenu
                 handleChange={this.handleChange}
+                characterNames={characterNames}
                 selectedCharacter={selectedCharacter}
                 stringToUppercaseWithSpace={this.stringToUppercaseWithSpace}
                 selectedDisplayName={displayName}
