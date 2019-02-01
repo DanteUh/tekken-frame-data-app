@@ -30,22 +30,23 @@ export default class CharacterMenu extends Component {
         return res.json().then(Promise.reject.bind(Promise));
       }
     }).then(data => {
+      console.log(data);
       const characterNames = data.map(character => {
         return character.name
-      })
+      }).sort()
       
       this.setState({
         characterNames,
         isLoading: false
       });
 
-      this.importImages();
+      this.importCharacterThumbnails();
       this.characterNamesToDisplayName();
 
     }).catch(err => console.log('Error', err));
   };
 
-  importImages = () => {
+  importCharacterThumbnails = () => {
     const images = this.state.characterNames.map(name => {
       return require(`../images/character-thumbnails/${name}.png`);
     });
@@ -64,7 +65,6 @@ export default class CharacterMenu extends Component {
   };
 
   render() {
-    
     const selectedThumbnail = require(`../images/character-thumbnails/${this.props.selectedCharacter}.png`);
     
     const characterList = this.state.displayNames.map((character, i) => {
