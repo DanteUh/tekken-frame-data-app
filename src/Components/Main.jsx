@@ -10,7 +10,7 @@ export default class Main extends Component {
     selectedCharacterData: [],
     selectedCharacter: 'akuma',
     displayName: 'Akuma',
-    isLoading: true,
+    isLoading: false,
   };
 
   componentDidMount() {
@@ -18,8 +18,10 @@ export default class Main extends Component {
   };
 
   getCharacters = () => {
-    fetch('http://localhost:8080/characters')
-    .then(res => {
+    const url = 'http://localhost:8080/characters';
+    this.setState({ isLoading: true });
+
+    fetch(url).then(res => {
       if (res.status >= 200 && res.status <= 300) {
         return res.json();
       } else {
@@ -42,6 +44,32 @@ export default class Main extends Component {
     });
   };
 
+  getSelectedCharacter = () => {
+    const url = `http://localhost:8080/characters/${this.state.selectedCharacter}`;
+    this.setState({ isLoading: true });
+
+    fetch(url).then(res => {
+      if (res.status >= 200 && res.status <= 300) {
+        return res.json();
+      } else {
+        this.setState({
+          isLoading: false
+        })
+        return res.json().then(Promise.reject.bind(Promise));   
+      }
+    })
+    .then(data => {
+      console.log(data);
+      this.setState({
+        selectedCharacterData: data.moves,
+        isLoading: false
+      });
+    })
+    .catch(err => {
+      console.log('Error', err);
+    });
+  };
+
   filterCharacterData = (dataArray) => {
     const filteredData = dataArray.map(characterObj => {
       return characterObj;
@@ -56,9 +84,18 @@ export default class Main extends Component {
   };
 
   handleChange = async (e) => {
-    await this.setState({ [e.target.name]: e.target.value });
-    this.setSelectedCharacterDisplayName();
-    this.filterCharacterData(this.state.characterData);
+    console.log(e.target.value);
+    
+    if (
+      this.state.selectedCharacter !== e.target.value &&
+      e.target.value !== undefined &&
+      e.target.value !== ''
+    ) {
+      await this.setState({ [e.target.name]: e.target.value });
+      this.setSelectedCharacterDisplayName();
+      this.getSelectedCharacter();
+      //this.filterCharacterData(this.state.characterData);
+    }
   };
 
   stringToUppercaseWithSpace = (string) => {
