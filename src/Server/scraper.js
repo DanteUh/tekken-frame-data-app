@@ -71,8 +71,8 @@ for ( let x = 0; x < characterNames.length; x++ ) {
       }); */
     })
     .then(data => {    
-      utilsPost.postRequest('http://localhost:8080/characters', data);
-      //utilsPost.postRequest('http://localhost:8080/characters/name', {name: data.name});
+      //utilsPost.postRequest('http://localhost:8080/characters', data);
+      utilsPost.postRequest('http://localhost:8080/characters/name', {name: data.name});
       //console.log({name: data.name});
       
     })
