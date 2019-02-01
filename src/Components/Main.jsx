@@ -57,7 +57,6 @@ export default class Main extends Component {
       }
     })
     .then(data => {
-      console.log(data);
       this.setState({
         selectedCharacterData: data.moves,
         isLoading: false
@@ -81,9 +80,7 @@ export default class Main extends Component {
     });
   };
 
-  handleChange = async (e) => {
-    console.log(e.target.value);
-    
+  handleChange = async (e) => {    
     if (
       this.state.selectedCharacter !== e.target.value &&
       e.target.value !== undefined &&

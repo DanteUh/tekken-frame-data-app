@@ -30,7 +30,6 @@ export default class CharacterMenu extends Component {
         return res.json().then(Promise.reject.bind(Promise));
       }
     }).then(data => {
-      console.log(data);
       const characterNames = data.map(character => {
         return character.name
       }).sort()
