@@ -1,6 +1,5 @@
 /* eslint-disable */
 const cheerio = require('cheerio');
-const request = require('request');
 const requestPromise = require('request-promise');
 
 const utilsPost = require('./utils/postRequest');
@@ -71,7 +70,7 @@ for ( let x = 0; x < characterNames.length; x++ ) {
       }); */
     })
     .then(data => {    
-      //utilsPost.postRequest('http://localhost:8080/characters', data);
+      utilsPost.postRequest('http://localhost:8080/characters', data);
       utilsPost.postRequest('http://localhost:8080/characters/name', {name: data.name});
       //console.log({name: data.name});
       
