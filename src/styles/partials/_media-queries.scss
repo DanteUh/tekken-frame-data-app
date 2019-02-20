@@ -25,19 +25,20 @@
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 100%;
+
+    & p {
+      text-align: center;
+    }
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .character-header {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center !important;
+    
     .character-heading {
       display: none;
-    }
-    .character-nav {
-      display: flex;
-      justify-content: center;
     }
   }
 }
