@@ -31,17 +31,16 @@ h1 {
 
 @media screen and (max-width: 1200px) {
   .main-container {
-    width: 100%; } }
+    width: 100%; }
+    .main-container p {
+      text-align: center; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .character-header {
-    display: block;
-    text-align: center; }
+    display: flex;
+    justify-content: center !important; }
     .character-header .character-heading {
-      display: none; }
-    .character-header .character-nav {
-      display: flex;
-      justify-content: center; } }
+      display: none; } }
 
 .btn-custom {
   font-weight: 300;
@@ -89,6 +88,9 @@ h1 {
     color: white;
     cursor: pointer; }
 
+.character-header {
+  justify-content: space-between; }
+
 .dropdown-menu {
   padding: 0;
   max-height: 400px;
@@ -128,6 +130,7 @@ h1 {
     .ReactTable .-loading.-active .-loading-inner {
       top: 45%;
       font-size: 2em;
+      font-family: monospace;
       color: white; }
   .ReactTable .rt-noData {
     font-size: 1.1em;
@@ -140,7 +143,10 @@ h1 {
   .ReactTable .rt-td:first-child {
     display: block; }
 
-.ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input, .ReactTable .-pagination select {
+.ReactTable .rt-thead.-filters input,
+.ReactTable .rt-thead.-filters select,
+.ReactTable .-pagination .-pageJump input,
+.ReactTable .-pagination select {
   padding: 3px 5px; }
 
 .main-body {

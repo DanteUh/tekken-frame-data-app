@@ -112,7 +112,7 @@ export default class Main extends Component {
     return (
       <div className="main-body d-flex flex-column justify-content-center align-items-center">
         <div className="main-container p-2">
-          <div className="character-header d-flex flex-row justify-content-between align-items-end mb-1">
+          <div className="character-header d-flex flex-row align-items-end mb-1">
             <h1 className="character-heading">
               { displayName }
             </h1>

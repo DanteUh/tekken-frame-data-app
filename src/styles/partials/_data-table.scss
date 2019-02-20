@@ -31,6 +31,7 @@
     & .-loading-inner {
       top: 45%;
       font-size: 2em;
+      font-family: monospace;
       color: white;
     }
   }
@@ -49,6 +50,9 @@
   }
 }
 
-.ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select, .ReactTable .-pagination .-pageJump input, .ReactTable .-pagination select {
+.ReactTable .rt-thead.-filters input,
+.ReactTable .rt-thead.-filters select,
+.ReactTable .-pagination .-pageJump input,
+.ReactTable .-pagination select {
   padding: 3px 5px;
 }
