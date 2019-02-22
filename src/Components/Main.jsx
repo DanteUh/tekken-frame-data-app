@@ -82,7 +82,7 @@ export default class Main extends Component {
   render() {
     const {displayName, characterNames, selectedCharacter, selectedCharacterData, isLoading} = this.state
     const noDataMessage = `Sorry, no data for ${displayName}. Go, practice some electrics!`
-        
+
     return (
       <div className="main-body d-flex flex-column justify-content-center align-items-center">
         <div className="main-container p-2">

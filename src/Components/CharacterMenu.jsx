@@ -12,8 +12,13 @@ export default class CharacterMenu extends Component {
 
   componentDidMount() {
     this.getCharacterNames();
-    this.characterNamesToDisplayName();
   };
+
+  componentDidUpdate(props) {
+    if (this.props !== props) {
+      
+    }
+  }
 
   getCharacterNames = () => {
     this.setState({ isLoading: true });
@@ -38,18 +43,16 @@ export default class CharacterMenu extends Component {
         isLoading: false
       });
 
-      this.importCharacterThumbnails();
-      this.characterNamesToDisplayName();
+      this.characterNamesToDisplayName(characterNames);
 
     }).catch(err => console.log('Error', err));
   };
 
-  characterNamesToDisplayName = () => {    
-    const displayNames = this.state.characterNames.map(name => {
-      console.log(name);
-      
+  characterNamesToDisplayName = (arr) => {    
+    const displayNames = arr.map(name => {      
       return this.props.stringToUppercaseWithSpace(name);
     });
+
     this.setState({ displayNames });
   };
 
@@ -58,22 +61,22 @@ export default class CharacterMenu extends Component {
   };
 
   render() {
-    const { displayNames, characterThumbnails, characterNames, dropdownOpen } = this.state
-    const { handleChange, selectedCharacter, selectedDisplayName } = this.props
-    console.log(characterNames);
-    
+    const { displayNames, characterNames, dropdownOpen } = this.state
+    const { handleChange, selectedCharacter, selectedDisplayName } = this.props    
 
-    const characterList = this.state.characterNames.map((character, i) => {      
-      return (
-        <CharacterList
-          key={i}
-          characterName={displayNames[i]}
-          handleChange={handleChange}
-          characterThumbnailWebp={require(`../images/character-thumbnails/${character}.webp`)}
-          characterThumbnailPng={require(`../images/character-thumbnails/${character}.png`)}
-          characterNameValue={character}
-        />
-      );
+    const characterList = characterNames.map((character, i) => {        
+      if (displayNames[i] !== undefined) {
+        return (
+          <CharacterList
+            key={i}
+            characterName={displayNames[i]}
+            handleChange={handleChange}
+            characterThumbnailWebp={require(`../images/character-thumbnails/${character}.webp`)}
+            characterThumbnailPng={require(`../images/character-thumbnails/${character}.png`)}
+            characterNameValue={character}
+          />
+        );
+      }
     });
 
     return (
