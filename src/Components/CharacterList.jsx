@@ -4,16 +4,23 @@ import { DropdownItem } from 'reactstrap';
 
 const CharacterList = props => (
   <DropdownItem
-    onClick={props.handleChange}
+    onChange={props.handleChange}
     value={props.characterNameValue}
     name="selectedCharacter"
     className="menu-item d-flex align-items-center"
   >
-    <img
-      src={props.characterThumbnail}
-      alt="character-thumbnail"
-      className="character-thumbnail mr-3"
-    />
+    <picture>
+      <source
+        srcSet={props.characterThumbnailWebp}
+        type="image/webp"
+        className="character-thumbnail"
+      />
+      <img
+        src={props.characterThumbnailPng}
+        className="character-thumbnail mr-3"
+        alt=""
+      />
+    </picture>
     {props.characterName}
   </DropdownItem>
 );
@@ -22,7 +29,8 @@ CharacterList.propTypes = {
   characterName: PropTypes.string.isRequired,
   characterNameValue: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
-  characterThumbnail: PropTypes.string.isRequired,
+  characterThumbnailWebp: PropTypes.any.isRequired,
+  characterThumbnailPng: PropTypes.any.isRequired,
 };
 
 export default CharacterList;

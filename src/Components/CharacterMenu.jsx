@@ -7,12 +7,12 @@ export default class CharacterMenu extends Component {
     characterNames: [],
     displayNames: [],
     dropdownOpen: false,
-    characterThumbnails: [],
     isLoading: false,
   };
 
   componentDidMount() {
     this.getCharacterNames();
+    this.characterNamesToDisplayName();
   };
 
   getCharacterNames = () => {
@@ -44,15 +44,10 @@ export default class CharacterMenu extends Component {
     }).catch(err => console.log('Error', err));
   };
 
-  importCharacterThumbnails = () => {
-    const images = this.state.characterNames.map(name => {
-      return require(`../images/character-thumbnails/${name}.png`);
-    });
-    this.setState({ characterThumbnails: images });
-  };
-
   characterNamesToDisplayName = () => {    
     const displayNames = this.state.characterNames.map(name => {
+      console.log(name);
+      
       return this.props.stringToUppercaseWithSpace(name);
     });
     this.setState({ displayNames });
@@ -65,17 +60,18 @@ export default class CharacterMenu extends Component {
   render() {
     const { displayNames, characterThumbnails, characterNames, dropdownOpen } = this.state
     const { handleChange, selectedCharacter, selectedDisplayName } = this.props
-
-    const selectedThumbnail = require(`../images/character-thumbnails/${selectedCharacter}.png`);
+    console.log(characterNames);
     
-    const characterList = displayNames.map((character, i) => {
+
+    const characterList = this.state.characterNames.map((character, i) => {      
       return (
         <CharacterList
           key={i}
-          characterName={character}
+          characterName={displayNames[i]}
           handleChange={handleChange}
-          characterThumbnail={characterThumbnails[i]}
-          characterNameValue={characterNames[i]}
+          characterThumbnailWebp={require(`../images/character-thumbnails/${character}.webp`)}
+          characterThumbnailPng={require(`../images/character-thumbnails/${character}.png`)}
+          characterNameValue={character}
         />
       );
     });
@@ -90,7 +86,18 @@ export default class CharacterMenu extends Component {
       >
       <DropdownToggle className="character-menu btn-custom dropdown-custom d-flex justify-content-between align-items-center">
         <div className="d-flex justify-content-between align-items-center">
-          <img src={selectedThumbnail} alt="character-thumbnail" className="character-thumbnail mr-3"/>
+        <picture>
+          <source
+            srcSet={require(`../images/character-thumbnails/${selectedCharacter}.webp`)}
+            type="image/webp"
+            className="character-thumbnail"
+          />
+          <img
+            src={require(`../images/character-thumbnails/${selectedCharacter}.png`)}
+            className="character-thumbnail mr-3"
+            alt=""
+          />
+        </picture>
           <h3>{selectedDisplayName}</h3>
         </div>
           {dropdownOpen ?

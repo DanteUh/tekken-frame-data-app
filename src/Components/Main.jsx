@@ -14,32 +14,7 @@ export default class Main extends Component {
   };
 
   componentDidMount() {
-    this.getCharacters();
-  };
-
-  getCharacters = () => {
-    const url = 'http://localhost:8080/characters';
-    this.setState({ isLoading: true });
-
-    fetch(url).then(res => {
-      if (res.status >= 200 && res.status <= 300) {
-        return res.json();
-
-      } else {
-        this.setState({ isLoading: false })
-
-        return res.json().then(Promise.reject.bind(Promise));
-      }
-    })
-    .then(data => {
-      this.setState({
-        characterData: data,
-        isLoading: false
-      });
-
-      this.filterCharacterData(data);
-
-    }).catch(err => console.log('Error', err));
+    this.getSelectedCharacter();
   };
 
   getSelectedCharacter = () => {
@@ -47,7 +22,7 @@ export default class Main extends Component {
     this.setState({ isLoading: true });
 
     fetch(url).then(res => {
-      if (res.status >= 200 && res.status <= 300) {
+      if (res.status >= 200 && res.status < 300) {
         return res.json();
       } else {
         this.setState({
@@ -89,7 +64,6 @@ export default class Main extends Component {
       await this.setState({ [e.target.name]: e.target.value });
       this.setSelectedCharacterDisplayName();
       this.getSelectedCharacter();
-      //this.filterCharacterData(this.state.characterData);
     }
   };
 
@@ -108,7 +82,7 @@ export default class Main extends Component {
   render() {
     const {displayName, characterNames, selectedCharacter, selectedCharacterData, isLoading} = this.state
     const noDataMessage = `Sorry, no data for ${displayName}. Go, practice some electrics!`
-
+        
     return (
       <div className="main-body d-flex flex-column justify-content-center align-items-center">
         <div className="main-container p-2">
