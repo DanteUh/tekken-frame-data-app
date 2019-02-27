@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu } from 'reactstrap';
+
 import CharacterList from './CharacterList';
 
 export default class CharacterMenu extends Component {
@@ -14,24 +15,17 @@ export default class CharacterMenu extends Component {
     this.getCharacterNames();
   };
 
-  componentDidUpdate(props) {
-    if (this.props !== props) {
-      
-    }
-  }
-
   getCharacterNames = () => {
     this.setState({ isLoading: true });
 
     fetch('http://localhost:8080/characters/name')
     .then(res => {
-      if (res.status >= 200 && res.status <= 300) {
+      if (res.status >= 200 && res.status < 300) {
         return res.json();
 
       } else {
-        this.setState({ isLoading: false });
-
         return res.json().then(Promise.reject.bind(Promise));
+
       }
     }).then(data => {
       const characterNames = data.map(character => {
@@ -40,10 +34,9 @@ export default class CharacterMenu extends Component {
       
       this.setState({
         characterNames,
+        displayNames: this.characterNamesToDisplayName(characterNames),
         isLoading: false
       });
-
-      this.characterNamesToDisplayName(characterNames);
 
     }).catch(err => console.log('Error', err));
   };
@@ -53,7 +46,7 @@ export default class CharacterMenu extends Component {
       return this.props.stringToUppercaseWithSpace(name);
     });
 
-    this.setState({ displayNames });
+    return displayNames;
   };
 
   toggle = () => {

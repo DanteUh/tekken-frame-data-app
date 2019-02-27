@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-// Components
 import CharacterMenu from './CharacterMenu';
 import DataTable from './DataTable';
 
@@ -17,23 +16,30 @@ export default class Main extends Component {
     this.getSelectedCharacter();
   };
 
-  getSelectedCharacter = () => {
-    const url = `http://localhost:8080/characters/${this.state.selectedCharacter}`;
+  getSelectedCharacter = (character) => {
+    if(character === undefined) {
+      character = this.state.selectedCharacter;
+    }
+    const url = `http://localhost:8080/characters/${character}`;
     this.setState({ isLoading: true });
 
     fetch(url).then(res => {
       if (res.status >= 200 && res.status < 300) {
         return res.json();
+        
       } else {
         this.setState({
           isLoading: false
         })
-        return res.json().then(Promise.reject.bind(Promise));   
+
+        return res.json().then(Promise.reject.bind(Promise)); 
       }
     })
     .then(data => {
       this.setState({
         selectedCharacterData: data.moves,
+        selectedCharacter: data.name,
+        displayName: this.stringToUppercaseWithSpace(data.name),
         isLoading: false
       });
     })
@@ -42,29 +48,16 @@ export default class Main extends Component {
     });
   };
 
-  filterCharacterData = (dataArray) => {
-    const filteredData = dataArray.map(characterObj => {
-      return characterObj;
-    }).filter(character => {
-      return character.name === this.state.selectedCharacter;
-    }).map(data => {
-      return data.moves;
-    });
-    filteredData.forEach(element => {
-      this.setState({ selectedCharacterData: element });
-    });
-  };
-
-  handleChange = async (e) => {    
+  handleChange = (e) => {    
     if (
       this.state.selectedCharacter !== e.target.value &&
       e.target.value !== undefined &&
       e.target.value !== ''
     ) {
-      await this.setState({ [e.target.name]: e.target.value });
-      this.setSelectedCharacterDisplayName();
-      this.getSelectedCharacter();
+      this.getSelectedCharacter(e.target.value);
     }
+
+    return;
   };
 
   stringToUppercaseWithSpace = (string) => {
@@ -74,15 +67,10 @@ export default class Main extends Component {
     });
   };
 
-  setSelectedCharacterDisplayName = () => {
-    const displayName = this.stringToUppercaseWithSpace(this.state.selectedCharacter);
-    this.setState({ displayName });
-  };
-
   render() {
-    const {displayName, characterNames, selectedCharacter, selectedCharacterData, isLoading} = this.state
+    const { displayName, characterNames, selectedCharacter, selectedCharacterData, isLoading } = this.state
     const noDataMessage = `Sorry, no data for ${displayName}. Go, practice some electrics!`
-
+        
     return (
       <div className="main-body d-flex flex-column justify-content-center align-items-center">
         <div className="main-container p-2">

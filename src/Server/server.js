@@ -5,7 +5,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-//const helmet = require('helmet');
+const helmet = require('helmet');
 
 /* Project files import */
 const dbConfig = require('./config/database.config.js');
@@ -29,7 +29,7 @@ const port = process.env.Port || 8080;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-//app.use(helmet.noCache());
+app.use(helmet.noCache());
 
 routes(app);
 
