@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu } from 'reactstrap';
+
 import CharacterList from './CharacterList';
 
 export default class CharacterMenu extends Component {
@@ -7,7 +8,6 @@ export default class CharacterMenu extends Component {
     characterNames: [],
     displayNames: [],
     dropdownOpen: false,
-    characterThumbnails: [],
     isLoading: false,
   };
 
@@ -20,13 +20,12 @@ export default class CharacterMenu extends Component {
 
     fetch('http://localhost:8080/characters/name')
     .then(res => {
-      if (res.status >= 200 && res.status <= 300) {
+      if (res.status >= 200 && res.status < 300) {
         return res.json();
 
       } else {
-        this.setState({ isLoading: false });
-
         return res.json().then(Promise.reject.bind(Promise));
+
       }
     }).then(data => {
       const characterNames = data.map(character => {
@@ -35,27 +34,19 @@ export default class CharacterMenu extends Component {
       
       this.setState({
         characterNames,
+        displayNames: this.characterNamesToDisplayName(characterNames),
         isLoading: false
       });
-
-      this.importCharacterThumbnails();
-      this.characterNamesToDisplayName();
 
     }).catch(err => console.log('Error', err));
   };
 
-  importCharacterThumbnails = () => {
-    const images = this.state.characterNames.map(name => {
-      return require(`../images/character-thumbnails/${name}.png`);
-    });
-    this.setState({ characterThumbnails: images });
-  };
-
-  characterNamesToDisplayName = () => {    
-    const displayNames = this.state.characterNames.map(name => {
+  characterNamesToDisplayName = (arr) => {    
+    const displayNames = arr.map(name => {      
       return this.props.stringToUppercaseWithSpace(name);
     });
-    this.setState({ displayNames });
+
+    return displayNames;
   };
 
   toggle = () => {
@@ -63,21 +54,22 @@ export default class CharacterMenu extends Component {
   };
 
   render() {
-    const { displayNames, characterThumbnails, characterNames, dropdownOpen } = this.state
-    const { handleChange, selectedCharacter, selectedDisplayName } = this.props
+    const { displayNames, characterNames, dropdownOpen } = this.state
+    const { handleChange, selectedCharacter, selectedDisplayName } = this.props    
 
-    const selectedThumbnail = require(`../images/character-thumbnails/${selectedCharacter}.png`);
-    
-    const characterList = displayNames.map((character, i) => {
-      return (
-        <CharacterList
-          key={i}
-          characterName={character}
-          handleChange={handleChange}
-          characterThumbnail={characterThumbnails[i]}
-          characterNameValue={characterNames[i]}
-        />
-      );
+    const characterList = characterNames.map((character, i) => {        
+      if (displayNames[i] !== undefined) {
+        return (
+          <CharacterList
+            key={i}
+            characterName={displayNames[i]}
+            handleChange={handleChange}
+            characterThumbnailWebp={require(`../images/character-thumbnails/${character}.webp`)}
+            characterThumbnailPng={require(`../images/character-thumbnails/${character}.png`)}
+            characterNameValue={character}
+          />
+        );
+      }
     });
 
     return (
@@ -90,7 +82,18 @@ export default class CharacterMenu extends Component {
       >
       <DropdownToggle className="character-menu btn-custom dropdown-custom d-flex justify-content-between align-items-center">
         <div className="d-flex justify-content-between align-items-center">
-          <img src={selectedThumbnail} alt="character-thumbnail" className="character-thumbnail mr-3"/>
+        <picture>
+          <source
+            srcSet={require(`../images/character-thumbnails/${selectedCharacter}.webp`)}
+            type="image/webp"
+            className="character-thumbnail"
+          />
+          <img
+            src={require(`../images/character-thumbnails/${selectedCharacter}.png`)}
+            className="character-thumbnail mr-3"
+            alt=""
+          />
+        </picture>
           <h3>{selectedDisplayName}</h3>
         </div>
           {dropdownOpen ?

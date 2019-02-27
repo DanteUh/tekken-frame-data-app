@@ -5,14 +5,6 @@ import ReactTable from 'react-table';
 const DataTable = props => (
   <div className="data-table p-2">
     <ReactTable
-      data={props.selectedCharacterData}
-      loading={props.isLoading}
-      loadingText="Loading..."
-      noDataText={props.noDataMessage}
-      defaultPageSize={50}
-      filterable
-      defaultFilterMethod={(filter, row) =>
-        (row[filter.id]).includes(filter.value)}
       columns={[
         {
           Header: 'Command',
@@ -52,6 +44,16 @@ const DataTable = props => (
         height: '75vh',
       }}
       className="-striped -highlight"
+      data={props.selectedCharacterData}
+      loading={props.isLoading}
+      loadingText="Loading..."
+      noDataText={props.noDataMessage}
+      defaultPageSize={50}
+      filterable
+      defaultFilterMethod={
+        (filter, row) =>
+          (row[filter.id]).includes(filter.value)
+      }
     />
   </div>
 );
