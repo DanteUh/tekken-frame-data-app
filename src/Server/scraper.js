@@ -8,13 +8,16 @@ const charactersJson = require('../shared/characterNames.json');
 const characterNames = charactersJson.characterNames;
 
 for ( let x = 0; x < characterNames.length; x++ ) {
-  const url = `http://rbnorway.org/${characterNames[x]}-t7-frames/`;
   let currentCharacter = characterNames[x];
+  let options = {
+    uri: `http://rbnorway.org/${characterNames[x]}-t7-frames/`,
+    transform: function (body) {
+        return cheerio.load(body);
+    }
+  };
 
-  requestPromise(url)
-    .then(html => {
-      const $ = cheerio.load(html);
-
+  requestPromise(options)
+    .then($ => {
       let unfilteredMoves = [];
       let notUsed = [];
 
@@ -54,7 +57,7 @@ for ( let x = 0; x < characterNames.length; x++ ) {
         } else {
           unfilteredMoves.push(moveObj);
         }
-      });      
+      });   
 
       const moves = utilsDuplicates.removeObjectDuplicates(unfilteredMoves, "command");
       
@@ -72,10 +75,10 @@ for ( let x = 0; x < characterNames.length; x++ ) {
     .then(data => {    
       utilsPost.postRequest('http://localhost:8080/characters', data);
       utilsPost.postRequest('http://localhost:8080/characters/name', {name: data.name});
-      //console.log({name: data.name});
+      //console.log(data);
       
     })
     .catch(err => {
-      console.log(err);
+      console.error(err);
     });
 }
