@@ -29,8 +29,8 @@ CharacterList.propTypes = {
   characterName: PropTypes.string.isRequired,
   characterNameValue: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
-  characterThumbnailWebp: PropTypes.any.isRequired,
-  characterThumbnailPng: PropTypes.any.isRequired,
+  characterThumbnailWebp: PropTypes.node.isRequired,
+  characterThumbnailPng: PropTypes.node.isRequired,
 };
 
 export default CharacterList;
