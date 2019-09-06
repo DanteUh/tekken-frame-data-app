@@ -90,13 +90,14 @@ export default class Main extends Component {
           </div>
           <div className="horizontal-line mb-3"></div>
           <p>You can search, filter and sort in the data table. The columns are also resizable</p>
-          <div className="data-container text-white mt-3">
+          <div className="data-container text-white mt-3 mb-3">
             <DataTable
               selectedCharacterData={selectedCharacterData}
               isLoading={isLoading}
               noDataMessage={noDataMessage}
             />
           </div>
+          <p>The frame data is originally from <a href="http://rbnorway.org/t7-frame-data/">rbnorway.org</a></p>
         </div>
       </div>
     );
